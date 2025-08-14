@@ -85,6 +85,10 @@ const int GestureSwipeRight = 1;
 
 const float kScrollFactor = 20.0f; // Just picked what fell right.
 const double kHoverRate = 1.0 / 10.0;
+// Thumbstick-to-zoom sensitivity (modifiable at runtime via SetVRVideoZoomSensitivity)
+static float gVRVideoZoomSensitivity = 0.5f;
+static float gVRVideoZoomScale = 1.0f; // for equirect videos
+static const float kFrontFacingZoomStepBase = 0.1f; // meters per frame step
 
 // 'azure' color, for active pinch gesture while on hand mode
 const vrb::Color kPointerColorSelected = vrb::Color(0.32f, 0.56f, 0.88f);
@@ -664,6 +668,23 @@ BrowserWorld::State::UpdateControllers(bool& aRelayoutWidgets) {
                                     controller.lastButtonState & ControllerDelegate::BUTTON_A;
       if (togglePressed != toggleWasPressed) {
         VRBrowser::HandleMotionEvent(0, controller.index, jboolean(controller.focused), (jboolean) togglePressed, 0.0f, 0.0f);
+      }
+
+      // Zoom handling while in VR video mode
+      // Use thumbstick Y (forward) to zoom in/out along camera forward
+      const float thumbY = controller.immersiveAxes[device::kImmersiveAxisThumbstickY];
+      if (fabsf(thumbY) > 0.0001f) {
+        if (vrVideo->UsesEquirect()) {
+          // Adjust UV zoom scale for 360/180 video
+          gVRVideoZoomScale = std::max(0.0001f, gVRVideoZoomScale + (thumbY * gVRVideoZoomSensitivity * 0.02f));
+          VRB_LOG("[Zoom] Equirect zoomScale=%.4f (thumbY=%.3f, sens=%.3f)", gVRVideoZoomScale, thumbY, gVRVideoZoomSensitivity);
+          vrVideo->SetZoomScale(gVRVideoZoomScale);
+        } else {
+          // Front-facing video: move plane along forward axis
+          const float step = kFrontFacingZoomStepBase * gVRVideoZoomSensitivity;
+          const float delta = -thumbY * step; // forward stick increases zoom-in
+          vrVideo->AdjustFrontFacingDistance(delta, rootTransparent->GetTransform(), device->GetHeadTransform());
+        }
       }
     }
     controller.lastButtonState = controller.buttonState;
@@ -2127,6 +2148,12 @@ void BrowserWorld::OnReorient() {
   VRBrowser::ResetWindowsPosition();
 }
 
+void
+BrowserWorld::SetVRVideoZoomSensitivity(float sensitivity) {
+  gVRVideoZoomSensitivity = sensitivity;
+  VRB_LOG("[Zoom] Sensitivity set to %.3f", gVRVideoZoomSensitivity);
+}
+
 } // namespace crow
 
 
@@ -2199,6 +2226,11 @@ JNI_METHOD(void, triggerHapticFeedbackNative)
 (JNIEnv*, jobject, jfloat aPulseDuration, jfloat aPulseIntensity, jint aControllerId) {
   crow::BrowserWorld::Instance().TriggerHapticFeedback(aPulseDuration, aPulseIntensity, aControllerId);
 }
+
+  JNI_METHOD(void, setVRVideoZoomSensitivityNative)
+  (JNIEnv*, jobject, jfloat aSensitivity) {
+    crow::BrowserWorld::SetVRVideoZoomSensitivity(aSensitivity);
+  }
 
 JNI_METHOD(void, setTemporaryFilePath)
 (JNIEnv* aEnv, jobject, jstring aPath) {

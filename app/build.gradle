@@ -107,6 +107,7 @@ def CHROMIUM_RELEASE_VERSION_NAME = '1.2.1'
 android {
     namespace 'com.igalia.wolvic'
     compileSdkVersion 35
+    ndkVersion "26.1.10909125"
     defaultConfig {
         applicationId "com.igalia.wolvic"
         minSdkVersion 24

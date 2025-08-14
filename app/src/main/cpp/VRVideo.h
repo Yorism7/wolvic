@@ -46,6 +46,12 @@ public:
   vrb::NodePtr GetRoot() const;
   void Exit();
   void SetReorientTransform(const vrb::Matrix& transform);
+  // Returns true if this VR video uses equirect layers (360/180 projections)
+  bool UsesEquirect() const;
+  // Set zoom scale for equirect videos (applies to UV transform). No upper bound.
+  void SetZoomScale(float aScale);
+  // Move front-facing video along camera forward/backward (positive moves closer)
+  void AdjustFrontFacingDistance(float aDelta, const vrb::Matrix& reorient, const vrb::Matrix& headTransform);
 protected:
   struct State;
   VRVideo(State& aState, vrb::CreationContextPtr& aContext);

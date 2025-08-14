@@ -25,6 +25,7 @@
 
 #include "Quad.h"
 #include "Widget.h"
+#include "vrb/Logger.h"
 
 namespace crow {
 
@@ -390,6 +391,41 @@ VRVideo::Exit() {
 void
 VRVideo::SetReorientTransform(const vrb::Matrix& transform) {
   m.root->SetTransform(transform);
+}
+
+bool
+VRVideo::UsesEquirect() const {
+  return m.layer && m.layer->GetLayerType() == VRLayer::LayerType::EQUIRECTANGULAR;
+}
+
+void
+VRVideo::SetZoomScale(float aScale) {
+  if (!m.layer || m.layer->GetLayerType() != VRLayer::LayerType::EQUIRECTANGULAR) {
+    return;
+  }
+  auto equirect = std::dynamic_pointer_cast<VRLayerEquirect>(m.layer);
+  if (!equirect) {
+    return;
+  }
+  if (aScale <= 0.0f) {
+    aScale = 0.0001f; // avoid zero or negative
+  }
+  VRB_LOG("[VRVideo] SetZoomScale %.4f", aScale);
+  equirect->SetZoomScale(aScale);
+}
+
+void
+VRVideo::AdjustFrontFacingDistance(float aDelta, const vrb::Matrix& reorient, const vrb::Matrix& headTransform) {
+  // Applies to non-equirect projections (SBS / TB). If equirect, handled via UV scaling
+  if (m.layer && m.layer->GetLayerType() == VRLayer::LayerType::EQUIRECTANGULAR) {
+    return;
+  }
+  // Move the root along camera forward vector in world (respect reorient yaw)
+  vrb::Vector forward = reorient.PostMultiply(headTransform).MultiplyDirection(vrb::Vector(0.0f, 0.0f, -1.0f));
+  vrb::Matrix current = m.root->GetTransform();
+  current.TranslateInPlace(forward * aDelta);
+  VRB_LOG("[VRVideo] AdjustFrontFacingDistance delta=%.4f", aDelta);
+  m.root->SetTransform(current);
 }
 
 VRVideoPtr

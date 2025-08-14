@@ -204,6 +204,9 @@ public:
   static VRLayerEquirectPtr Create();
   const vrb::Matrix& GetUVTransform(device::Eye aEye) const;
   void SetUVTransform(device::Eye aEye, const vrb::Matrix& aTransform);
+  // Zoom scale applied on top of current UV transform scale. Default 1.0f
+  float GetZoomScale() const;
+  void SetZoomScale(float aZoomScale);
 protected:
   struct State;
   VRLayerEquirect(State& aState);

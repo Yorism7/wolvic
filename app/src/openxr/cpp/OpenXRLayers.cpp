@@ -226,8 +226,10 @@ OpenXRLayerEquirect::Update(XrSpace aSpace, const XrPosef &aReorientPose, XrSwap
     // Zero radius value is treated as an infinite sphere
     xrLayers[i].radius = 0;
 
-    // Map video projection UV transform
-    const vrb::Vector scale = layer->GetUVTransform(eye).GetScale();
+    // Map video projection UV transform (apply zoom scale)
+    const vrb::Vector baseScale = layer->GetUVTransform(eye).GetScale();
+    const float zoomScale = layer->GetZoomScale();
+    const vrb::Vector scale = vrb::Vector(baseScale.x() * zoomScale, baseScale.y() * zoomScale, baseScale.z());
     const vrb::Vector translation = layer->GetUVTransform(eye).GetTranslation();
     xrLayers[i].scale.x = scale.x();
     xrLayers[i].scale.y = scale.y();

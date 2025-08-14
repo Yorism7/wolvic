@@ -527,9 +527,11 @@ VRLayerCube::~VRLayerCube() {}
 
 struct VRLayerEquirect::State: public VRLayer::State {
   vrb::Matrix uvTransform[2];
+  float zoomScale;
   State() {
     uvTransform[0] = vrb::Matrix::Identity();
     uvTransform[1] = vrb::Matrix::Identity();
+    zoomScale = 1.0f;
   }
 };
 
@@ -549,6 +551,16 @@ VRLayerEquirect::GetUVTransform(device::Eye aEye) const {
 void
 VRLayerEquirect::SetUVTransform(device::Eye aEye, const vrb::Matrix& aTransform) {
   m.uvTransform[device::EyeIndex(aEye)] = aTransform;
+}
+
+float
+VRLayerEquirect::GetZoomScale() const {
+  return m.zoomScale;
+}
+
+void
+VRLayerEquirect::SetZoomScale(float aZoomScale) {
+  m.zoomScale = aZoomScale;
 }
 
 

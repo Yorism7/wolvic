@@ -82,6 +82,8 @@ public:
   void SetHandTrackingEnabled(bool);
   JNIEnv* GetJNIEnv() const;
   void OnReorient() override;
+  // Configure VR video zoom sensitivity (default 0.5). Call anytime.
+  static void SetVRVideoZoomSensitivity(float sensitivity);
 #if HVR
   bool WasButtonAppPressed();
 #endif

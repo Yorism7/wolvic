@@ -1,5 +1,9 @@
 package com.igalia.wolvic.crashreporting;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
@@ -9,6 +13,7 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 // TODO: Deprecated JobIntentService, see https://github.com/Igalia/wolvic/issues/805
 import androidx.core.app.JobIntentService;
+import androidx.core.app.NotificationCompat;
 
 import com.igalia.wolvic.BuildConfig;
 import com.igalia.wolvic.R;
@@ -26,6 +31,8 @@ import java.util.UUID;
 public class CrashReporterService extends JobIntentService {
 
     private static final String LOGTAG = SystemUtils.createLogtag(CrashReporterService.class);
+    private static final String FOREGROUND_CHANNEL_ID = "wolvic_crash_channel";
+    private static final int FOREGROUND_NOTIFICATION_ID = 910001;
 
     public static final String CRASH_ACTION = BuildConfig.APPLICATION_ID + ".CRASH_ACTION";
     public static final String DATA_TAG = "intent";
@@ -41,11 +48,49 @@ public class CrashReporterService extends JobIntentService {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.d(LOGTAG, "onStartCommand");
+        ensureForeground();
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             enqueueWork(this, CrashReporterService.class, JOB_ID, intent);
         }
 
         return super.onStartCommand(intent, flags, startId);
+    }
+
+    private void ensureForeground() {
+        try {
+            final NotificationManager nm = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            if (nm == null) {
+                Log.w(LOGTAG, "NotificationManager is null; cannot startForeground");
+                return;
+            }
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                NotificationChannel channel = new NotificationChannel(
+                        FOREGROUND_CHANNEL_ID,
+                        "Wolvic Crash Handler",
+                        NotificationManager.IMPORTANCE_MIN
+                );
+                channel.setDescription("Crash monitoring in background");
+                nm.createNotificationChannel(channel);
+            }
+            Intent openIntent = new Intent(this, VRBrowserActivity.class);
+            int piFlags = (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+                    ? PendingIntent.FLAG_IMMUTABLE | PendingIntent.FLAG_UPDATE_CURRENT
+                    : PendingIntent.FLAG_UPDATE_CURRENT;
+            PendingIntent contentIntent = PendingIntent.getActivity(this, 0, openIntent, piFlags);
+
+            Notification notification = new NotificationCompat.Builder(this, FOREGROUND_CHANNEL_ID)
+                    .setSmallIcon(R.mipmap.ic_launcher)
+                    .setContentTitle("Wolvic")
+                    .setContentText("Crash handler is running")
+                    .setContentIntent(contentIntent)
+                    .setOngoing(true)
+                    .setPriority(NotificationCompat.PRIORITY_MIN)
+                    .build();
+            Log.d(LOGTAG, "Calling startForeground for crash service");
+            startForeground(FOREGROUND_NOTIFICATION_ID, notification);
+        } catch (Throwable t) {
+            Log.e(LOGTAG, "Failed to startForeground: " + t.getMessage());
+        }
     }
 
     @NonNull
@@ -139,6 +184,12 @@ public class CrashReporterService extends JobIntentService {
         }
 
         Log.d(LOGTAG, "Crash reporter job finished");
+        try {
+            stopForeground(true);
+        } catch (Throwable t) {
+            Log.w(LOGTAG, "stopForeground failed: " + t.getMessage());
+        }
+        stopSelf();
     }
 
     public static void submitCaughtException(@NonNull Exception exception) {
