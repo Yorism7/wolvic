@@ -1,5 +1,9 @@
 package com.igalia.wolvic.crashreporting;
 
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.ActivityManager;
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -13,6 +17,7 @@ import android.util.Log;
 import androidx.annotation.NonNull;
 // TODO: Deprecated JobIntentService, see https://github.com/Igalia/wolvic/issues/805
 import androidx.core.app.JobIntentService;
+import androidx.core.app.NotificationCompat;
 
 import com.igalia.wolvic.BuildConfig;
 import com.igalia.wolvic.R;
@@ -30,6 +35,8 @@ import java.util.UUID;
 public class CrashReporterService extends JobIntentService {
 
     private static final String LOGTAG = SystemUtils.createLogtag(CrashReporterService.class);
+    private static final String FOREGROUND_CHANNEL_ID = "wolvic_crash_channel";
+    private static final int FOREGROUND_NOTIFICATION_ID = 910001;
 
     public static final String CRASH_ACTION = BuildConfig.APPLICATION_ID + ".CRASH_ACTION";
     public static final String DATA_TAG = "intent";
@@ -47,54 +54,11 @@ public class CrashReporterService extends JobIntentService {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.d(LOGTAG, "onStartCommand");
-        // Must call startForeground() immediately when started via startForegroundService(),
-        // otherwise Android throws ForegroundServiceDidNotStartInTimeException (e.g. on Quest).
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            ensureNotificationChannel();
-            Notification notification = buildForegroundNotification();
-            if (Build.VERSION.SDK_INT >= 34) {
-                startForeground(NOTIFICATION_ID, notification, android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC);
-            } else {
-                startForeground(NOTIFICATION_ID, notification);
-            }
-        }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             enqueueWork(this, CrashReporterService.class, JOB_ID, intent);
         }
 
         return super.onStartCommand(intent, flags, startId);
-    }
-
-    private void ensureNotificationChannel() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            NotificationChannel channel = new NotificationChannel(
-                    NOTIFICATION_CHANNEL_ID,
-                    getString(R.string.crash_reporter_channel_name),
-                    NotificationManager.IMPORTANCE_LOW);
-            channel.setShowBadge(false);
-            NotificationManager nm = getSystemService(NotificationManager.class);
-            if (nm != null) {
-                nm.createNotificationChannel(channel);
-            }
-        }
-    }
-
-    private Notification buildForegroundNotification() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            Intent activityIntent = new Intent(this, VRBrowserActivity.class);
-            activityIntent.setPackage(BuildConfig.APPLICATION_ID);
-            activityIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-            PendingIntent pending = PendingIntent.getActivity(this, 0, activityIntent,
-                    PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
-            return new Notification.Builder(this, NOTIFICATION_CHANNEL_ID)
-                    .setContentTitle(getString(R.string.crash_reporter_notification_title))
-                    .setContentText(getString(R.string.crash_reporter_notification_text))
-                    .setSmallIcon(android.R.drawable.ic_dialog_info)
-                    .setContentIntent(pending)
-                    .setPriority(Notification.PRIORITY_LOW)
-                    .build();
-        }
-        return null;
     }
 
     @NonNull
@@ -188,6 +152,12 @@ public class CrashReporterService extends JobIntentService {
         }
 
         Log.d(LOGTAG, "Crash reporter job finished");
+        try {
+            stopForeground(true);
+        } catch (Throwable t) {
+            Log.w(LOGTAG, "stopForeground failed: " + t.getMessage());
+        }
+        stopSelf();
     }
 
     public static void submitCaughtException(@NonNull Exception exception) {

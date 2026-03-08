@@ -92,20 +92,14 @@ public class OffscreenDisplay {
 
             int flags = DisplayManager.VIRTUAL_DISPLAY_FLAG_OWN_CONTENT_ONLY;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
-                try {
-                    WindowManager windowManager = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);
-                    WindowMetrics metrics = windowManager.getCurrentWindowMetrics();
-                    Rect bounds = metrics.getBounds();
-                    mDefaultMetrics.widthPixels = bounds.width();
-                    mDefaultMetrics.heightPixels = bounds.height();
-                    mDefaultMetrics.density = metrics.getDensity();
-                    DisplayMetrics displayMetrics = mContext.getResources().getDisplayMetrics();
-                    mDefaultMetrics.densityDpi = displayMetrics.densityDpi;
-                } catch (Exception e) {
-                    // Non-visual context (e.g. Application) cannot use WindowManager on API 34+.
-                    // Fallback to display/resources metrics.
-                    defaultDisplay.getMetrics(mDefaultMetrics);
-                }
+                WindowManager windowManager = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);
+                WindowMetrics metrics = windowManager.getCurrentWindowMetrics();
+                Rect bounds = metrics.getBounds();
+                mDefaultMetrics.widthPixels = bounds.width();
+                mDefaultMetrics.heightPixels = bounds.height();
+                mDefaultMetrics.density = metrics.getDensity();
+                DisplayMetrics displayMetrics = mContext.getResources().getDisplayMetrics();
+                mDefaultMetrics.densityDpi = displayMetrics.densityDpi;
             } else {
                 defaultDisplay.getMetrics(mDefaultMetrics);
             }
