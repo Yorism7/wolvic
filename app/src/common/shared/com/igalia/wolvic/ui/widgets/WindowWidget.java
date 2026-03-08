@@ -175,6 +175,7 @@ public class WindowWidget extends UIWidget implements SessionChangeListener,
         default void onSessionChanged(@NonNull Session aOldSession, @NonNull Session aSession) {}
         default void onContentFullScreen(@NonNull WindowWidget aWindow, boolean aFullScreen) {}
         default void onMediaFullScreen(@NonNull final WMediaSession mediaSession, boolean aFullScreen) {}
+        default void onMediaPlayStarted(@NonNull WindowWidget aWindow) {}
         default void onIsWindowFullscreenChanged(boolean aFullScreen) {}
         default void onVideoAvailabilityChanged(@NonNull WindowWidget aWindow) {}
         default void onKioskMode(WindowWidget aWindow, boolean isKioskMode) {}
@@ -2031,6 +2032,8 @@ public class WindowWidget extends UIWidget implements SessionChangeListener,
        public void onPlay(@NonNull @NotNull WSession session, @NonNull @NotNull WMediaSession mediaSession) {
            mViewModel.setIsMediaAvailable(true);
            mViewModel.setIsMediaPlaying(true);
+           for (WindowListener listener : mListeners)
+               listener.onMediaPlayStarted(WindowWidget.this);
        }
 
        @Override

@@ -125,6 +125,8 @@ public class NavigationBarWidget extends UIWidget implements WSession.Navigation
     private MediaControlsWidget mMediaControlsWidget;
     private Media mFullScreenMedia;
     private @VideoProjectionMenuWidget.VideoProjectionFlags int mAutoSelectedProjection = VIDEO_PROJECTION_NONE;
+    /** เมื่อ true = เราเข้า fullscreen จากกด Play จะให้ onMediaFullScreen เข้า VR 180 (แสดงเฉพาะวิดีโอ ไม่มี UI) */
+    private boolean mEnterVR180OnNextFullScreen;
     private HamburgerMenuWidget mHamburgerMenu;
     private QuickPermissionWidget mQuickPermissionWidget;
     private SendTabDialogWidget mSendTabDialog;
@@ -664,6 +666,22 @@ public class NavigationBarWidget extends UIWidget implements WSession.Navigation
     }
 
     @Override
+    public void onMediaPlayStarted(@NonNull WindowWidget aWindow) {
+        if (aWindow != mAttachedWindow || mViewModel.getIsInVRVideo().getValue().get()) {
+            return;
+        }
+        // ตาม Wolvic/Gecko: ให้เห็นเฉพาะวิดีโอ (ไม่มี UI) ต้องให้วิดีโอเข้า fullscreen ก่อน
+        // จึงสั่ง requestFullscreen() ที่ element วิดีโอ แล้วรอ onMediaFullScreen ค่อยเข้า VR
+        mEnterVR180OnNextFullScreen = true;
+        android.util.Log.d("VRB", "[NavigationBarWidget] onMediaPlayStarted: requesting video fullscreen then VR 180");
+        Session session = getSession();
+        if (session != null) {
+            String js = "javascript:void((function(){var v=document.querySelector('video');if(v)v.requestFullscreen().catch(function(){});})())";
+            session.loadUri(js);
+        }
+    }
+
+    @Override
     public void onMediaFullScreen(@NonNull WMediaSession mediaSession, boolean aFullScreen) {
         if (aFullScreen) {
             // The content fullscreen event might have arrived before the media fullscreen event
@@ -674,13 +692,25 @@ public class NavigationBarWidget extends UIWidget implements WSession.Navigation
             if (getSession().getFullScreenVideo() == null) {
                 mAutoSelectedProjection = VIDEO_PROJECTION_NONE;
                 autoEnter.set(false);
+                mEnterVR180OnNextFullScreen = false;
             } else {
-                mAutoSelectedProjection = VideoProjectionMenuWidget.getAutomaticProjection(getSession().getCurrentUri(), autoEnter);
+                if (mEnterVR180OnNextFullScreen) {
+                    mAutoSelectedProjection = VideoProjectionMenuWidget.VIDEO_PROJECTION_180;
+                    autoEnter.set(true);
+                    mEnterVR180OnNextFullScreen = false;
+                } else {
+                    mAutoSelectedProjection = VideoProjectionMenuWidget.getAutomaticProjection(getSession().getCurrentUri(), autoEnter);
+                    if (mAutoSelectedProjection == VIDEO_PROJECTION_NONE) {
+                        mAutoSelectedProjection = VideoProjectionMenuWidget.VIDEO_PROJECTION_180;
+                        autoEnter.set(true);
+                    }
+                }
             }
 
             if (mAutoSelectedProjection != VIDEO_PROJECTION_NONE && autoEnter.get()) {
                 mViewModel.setAutoEnteredVRVideo(true);
-                postDelayed(() -> enterVRVideo(mAutoSelectedProjection), 300);
+                // เข้า immersive VR ทันทีแบบ Quest Browser (ไม่หน่วง 300ms)
+                post(() -> enterVRVideo(mAutoSelectedProjection));
             } else {
                 mViewModel.setAutoEnteredVRVideo(false);
                 if (mProjectionMenu != null) {
@@ -689,6 +719,7 @@ public class NavigationBarWidget extends UIWidget implements WSession.Navigation
             }
             mAttachedWindow.reCenterFrontWindow();
         } else {
+            mEnterVR180OnNextFullScreen = false;
             // This can be called by content's fullscreen event later but will be a noop.
             exitFullScreenMode();
 
@@ -914,8 +945,12 @@ public class NavigationBarWidget extends UIWidget implements WSession.Navigation
         mFullScreenMedia = getSession().getFullScreenVideo();
         // This should not happen, but Gecko does not notify about fullscreen changes in media if
         // the web content is already in fullscreen state.
-        if (mFullScreenMedia == null)
+        if (mFullScreenMedia == null) {
             mFullScreenMedia = getSession().getActiveVideo();
+            android.util.Log.d("VRB", "[enterVRVideo] using getActiveVideo (fullscreen video was null)");
+        } else {
+            android.util.Log.d("VRB", "[enterVRVideo] using getFullScreenVideo (video-only layer)");
+        }
 
         // mFullScreenMedia may still be null at this point.
         // For example, this can happen if the page does not provide the media playback events

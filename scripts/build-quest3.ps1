@@ -54,6 +54,23 @@ $apk = Get-ChildItem $apkDir -Filter "*.apk" -ErrorAction SilentlyContinue | Sel
 if ($apk) {
     Write-Host ""
     Write-Host "Build succeeded. APK: $($apk.FullName)" -ForegroundColor Green
+    # Install to device if adb available and device connected
+    if (Get-Command adb -ErrorAction SilentlyContinue) {
+        $devices = adb devices | Where-Object { $_ -match "device$" }
+        if ($devices.Count -gt 0) {
+            Write-Host "Installing to device..." -ForegroundColor Cyan
+            & adb install -r $apk.FullName
+            if ($LASTEXITCODE -eq 0) {
+                Write-Host "Install succeeded." -ForegroundColor Green
+            } else {
+                Write-Host "Install failed (exit code $LASTEXITCODE)." -ForegroundColor Yellow
+            }
+        } else {
+            Write-Host "No device connected. Connect Quest and run: adb install -r `"$($apk.FullName)`"" -ForegroundColor Yellow
+        }
+    } else {
+        Write-Host "adb not in PATH. Install manually: adb install -r `"$($apk.FullName)`"" -ForegroundColor Yellow
+    }
 } else {
     Write-Host "Build finished. Check $apkDir for APK." -ForegroundColor Green
 }

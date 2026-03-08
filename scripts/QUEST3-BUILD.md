@@ -66,6 +66,23 @@ cd F:\PROJECT_DEV\Wolvic\wolvic
 3. พอแอปเด้งแล้วกลับมาที่เทอร์มินัล กด Enter
 4. จะได้ไฟล์ `crash_log_YYYYMMDD_HHmmss.txt` และ `crash_log_*_VRB_only.txt` ในโฟลเดอร์ wolvic
 
+### บันทึก log กรณี VR video มีเสียงแต่ไม่มีภาพ / ไม่เข้า immersive
+
+ต้องดึง log **ขณะที่ Wolvic อยู่ foreground** และกำลังเล่น VR video (ถึงขั้นมีเสียงแต่ไม่มีภาพ):
+
+```powershell
+.\scripts\capture-vr-video-log.ps1
+```
+
+ทำตามในสคริปต์: ใส่หัว → เปิด Wolvic → เล่น VR 180/360 จนมีเสียงแต่ไม่มีภาพ → ถอดหัว → กด Enter  
+จะได้ไฟล์ `vr_video_log_*_VRB.txt` ในโฟลเดอร์ wolvic ดูบรรทัดที่มี `CreateLayerEquirect` หรือ `VRVideo` เพื่อเช็กว่าใช้ equirect หรือ geometry fallback
+
+หรือรัน logcat แบบ real-time (กรองเฉพาะ tag VRB):
+
+```powershell
+adb logcat -s VRB:V
+```
+
 ### ดึง minidump จากเครื่อง
 
 หลัง crash จะมีไฟล์ `.dmp` ใน app storage ของ Wolvic ดึงมาที่ PC ด้วย:
@@ -80,7 +97,7 @@ cd F:\PROJECT_DEV\Wolvic\wolvic
 
 ## การแก้ไขสำหรับ VR video (immersive 180/360)
 
-- **Equirect layer:** ถ้าไม่มี source layer ที่ใช้ได้ แอปจะไม่สร้าง OpenXR equirect และใช้โหมด geometry (sphere) แทน เพื่อลดโอกาส crash
+- **Equirect layer:** ใช้เฉพาะเมื่อพบ layer ของ window วิดีโอใน uiLayers (ไม่ใช้ layer แรกที่มี swapchain เป็น fallback เพราะอาจเป็นหน้าต่างอื่น → ไม่มีภาพ/ไม่เข้า immersive) ถ้าไม่พบจะใช้ geometry (sphere) แทน
 - **CrashReporterService:** เรียก `startForeground()` ทันทีเมื่อ service ถูก start ด้วย `startForegroundService()` เพื่อไม่ให้เกิด `ForegroundServiceDidNotStartInTimeException` บน Quest
 - **OffscreenDisplay:** บน API 34+ ถ้า Context ไม่ใช่ visual context จะ fallback ใช้ Display metrics แทน WindowManager
 - **WAKE_LOCK:** Gecko เรียก `setWakeLockState` ตอนเล่นวิดีโอ (รวม VR) — ต้องไม่ลบ permission นี้ใน manifest มิฉะนั้นอาจ native crash

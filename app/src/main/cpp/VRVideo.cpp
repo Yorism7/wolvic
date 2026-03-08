@@ -175,6 +175,9 @@ struct VRVideo::State {
     state->SetProgram(program);
     state->SetLightsEnabled(false);
     vrb::TexturePtr texture = std::dynamic_pointer_cast<vrb::Texture>(window->GetSurfaceTexture());
+    if (!texture) {
+      VRB_LOG("[VRVideo] createSphereProjection: window has no SurfaceTexture (composited window?), video may show black");
+    }
     state->SetTexture(texture);
     vrb::GeometryPtr geometry = vrb::Geometry::Create(create);
     geometry->SetVertexArray(array);
@@ -266,6 +269,7 @@ struct VRVideo::State {
     DeviceDelegatePtr device = deviceWeak.lock();
     VRLayerEquirectPtr equirect = device->CreateLayerEquirect(window->GetLayer());
     if (!equirect) {
+      VRB_LOG("[VRVideo] create180ProjectionLayer: CreateLayerEquirect returned null, using sphere fallback (may be black if no SurfaceTexture)");
       layer = window->GetLayer();
       leftEye = createSphereProjection(true, device::EyeRect(0.0f, 0.0f, 1.0f, 1.0f));
       return;

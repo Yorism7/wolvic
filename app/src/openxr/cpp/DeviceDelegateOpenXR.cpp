@@ -1500,22 +1500,50 @@ DeviceDelegateOpenXR::CreateLayerEquirect(const VRLayerPtr &aSource) {
   for (const OpenXRLayerPtr& layer: m.uiLayers) {
     if (layer->GetLayer() == aSource) {
       source = layer;
+      VRB_LOG("CreateLayerEquirect: found exact source layer (handle match)");
       break;
     }
   }
-  if (!source && !m.uiLayers.empty()) {
-    VRB_LOG("CreateLayerEquirect: window layer not found in uiLayers (count=%zu), using first layer with swapchain as fallback", m.uiLayers.size());
+  // Fallback: เลือก layer ตามขนาด window (แก้จอดำ – ใช้ layer ที่เป็น browser window ไม่ใช่ UI อื่น)
+  if (!source) {
+    VRLayerSurfacePtr sourceSurface = std::dynamic_pointer_cast<VRLayerSurface>(aSource);
+    int32_t wantW = sourceSurface ? sourceSurface->GetWidth() : 0;
+    int32_t wantH = sourceSurface ? sourceSurface->GetHeight() : 0;
+    OpenXRLayerPtr sizeMatch;
     for (const OpenXRLayerPtr& layer: m.uiLayers) {
-      if (layer->GetSwapChain()) {
-        source = layer;
+      if (!layer->GetSwapChain() || !layer->IsComposited()) continue;
+      VRLayerSurfacePtr surf = std::dynamic_pointer_cast<VRLayerSurface>(layer->GetLayer());
+      if (surf && wantW > 0 && wantH > 0 && surf->GetWidth() == wantW && surf->GetHeight() == wantH) {
+        sizeMatch = layer;
+        VRB_LOG("CreateLayerEquirect: using fallback by size match (count=%zu) %dx%d", m.uiLayers.size(), wantW, wantH);
         break;
       }
     }
-  } else if (!source) {
-    VRB_LOG("CreateLayerEquirect: window layer not found in uiLayers (count=%zu)", m.uiLayers.size());
+    if (sizeMatch) {
+      source = sizeMatch;
+    }
+  }
+  // Fallback: ใช้ layer ที่มีพื้นที่ใหญ่ที่สุด (มักเป็น browser window ไม่ใช่ tray/navbar)
+  if (!source) {
+    int32_t maxArea = 0;
+    for (const OpenXRLayerPtr& layer: m.uiLayers) {
+      if (!layer->GetSwapChain() || !layer->IsComposited()) continue;
+      VRLayerSurfacePtr surf = std::dynamic_pointer_cast<VRLayerSurface>(layer->GetLayer());
+      if (surf) {
+        int32_t area = surf->GetWidth() * surf->GetHeight();
+        if (area > maxArea) {
+          maxArea = area;
+          source = layer;
+        }
+      }
+    }
+    if (source) {
+      VRLayerSurfacePtr s = std::dynamic_pointer_cast<VRLayerSurface>(source->GetLayer());
+      VRB_LOG("CreateLayerEquirect: using largest composited layer %dx%d (count=%zu)", s ? s->GetWidth() : 0, s ? s->GetHeight() : 0, m.uiLayers.size());
+    }
   }
   if (!source) {
-    VRB_LOG("CreateLayerEquirect: no valid source, returning nullptr (VR video will use geometry fallback)");
+    VRB_LOG("CreateLayerEquirect: no composited layer in uiLayers (count=%zu), returning nullptr", m.uiLayers.size());
     return nullptr;
   }
   if (m.equirectLayer) {

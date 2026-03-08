@@ -1758,6 +1758,7 @@ isFrontFacingVRProjection(VRVideo::VRVideoProjection projection){
 
 void
 BrowserWorld::ShowVRVideo(const int aWindowHandle, const int aVideoProjection) {
+  VRB_LOG("ShowVRVideo called: handle=%d projection=%d", aWindowHandle, aVideoProjection);
   WidgetPtr widget = m.GetWidget(aWindowHandle);
   if (!widget) {
     VRB_ERROR("Can't find Widget for VRVideo with handle: %d", aWindowHandle);

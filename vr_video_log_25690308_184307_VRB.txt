@@ -1,0 +1,102 @@
+--------- beginning of main
+03-08 18:43:39.036 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:40.037 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:41.037 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:41.236 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.247 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.259 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.270 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.280 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.291 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.303 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.314 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.325 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.336 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.347 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.358 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.369 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.380 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.392 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.403 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.414 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:41.425 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:42.038 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:43.038 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:43.038 17271 17450 D VRB     : Performance Monitor detected average frame rate 89Hz
+03-08 18:43:43.038 17271 17450 I VRB     : Performance monitor setting minimum frame rate to 79Hz
+03-08 18:43:44.038 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:45.038 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:46.039 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:47.039 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:48.039 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:49.050 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:50.050 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:51.062 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:51.838 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.849 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.860 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.872 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.883 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.894 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.905 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.916 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.927 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.938 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.949 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.960 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.972 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.983 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:51.994 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.005 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.016 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.027 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.038 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.049 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.061 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.062 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:52.072 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.083 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.094 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.105 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.116 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.127 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.138 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.149 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.160 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.172 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.183 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.194 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.205 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.216 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.228 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.238 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.249 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.261 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.272 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.283 17271 17450 D VRB     : OpenXR button clicked: trigger
+03-08 18:43:52.561 17271 17450 I VRB     : APP_CMD_PAUSE
+03-08 18:43:52.561 17271 17450 D VRB     : Pausing Performance Monitor
+03-08 18:43:52.613 17271 17450 I VRB     : OpenXR XrEventDataSessionStateChanged: state XR_SESSION_STATE_FOCUSED->XR_SESSION_STATE_VISIBLE session=0x2 time=19014147999471
+03-08 18:43:52.613 17271 17450 I VRB     : XR_SESSION_STATE_VISIBLE
+03-08 18:43:52.613 17271 17450 I VRB     : OpenXR XrEventDataSessionStateChanged: state XR_SESSION_STATE_VISIBLE->XR_SESSION_STATE_SYNCHRONIZED session=0x2 time=19014163202858
+03-08 18:43:52.613 17271 17450 I VRB     : XR_SESSION_STATE_SYNCHRONIZED
+03-08 18:43:52.613 17271 17450 I VRB     : OpenXR XrEventDataSessionStateChanged: state XR_SESSION_STATE_SYNCHRONIZED->XR_SESSION_STATE_STOPPING session=0x2 time=19014183283120
+03-08 18:43:52.613 17271 17450 I VRB     : XR_SESSION_STATE_STOPPING
+03-08 18:43:52.641 17271 17450 I VRB     : OpenXR XrEventDataSessionStateChanged: state XR_SESSION_STATE_STOPPING->XR_SESSION_STATE_IDLE session=0x2 time=19014225151249
+03-08 18:43:52.643 17271 17450 I VRB     : OpenXR XrEventDataSessionStateChanged: state XR_SESSION_STATE_IDLE->XR_SESSION_STATE_READY session=0x2 time=19014227593125
+03-08 18:43:52.643 17271 17450 I VRB     : XR_SESSION_STATE_READY
+03-08 18:43:52.702 17271 17450 I VRB     : APP_CMD_RESUME
+03-08 18:43:52.702 17271 17450 D VRB     : Resuming Performance Monitor
+03-08 18:43:52.709 17271 17450 I VRB     : OpenXR XrEventDataSessionStateChanged: state XR_SESSION_STATE_READY->XR_SESSION_STATE_SYNCHRONIZED session=0x2 time=19014292655475
+03-08 18:43:52.709 17271 17450 I VRB     : XR_SESSION_STATE_SYNCHRONIZED
+03-08 18:43:52.714 17271 17450 I VRB     : OpenXR XrEventDataSessionStateChanged: state XR_SESSION_STATE_SYNCHRONIZED->XR_SESSION_STATE_VISIBLE session=0x2 time=19014295245110
+03-08 18:43:52.714 17271 17450 I VRB     : XR_SESSION_STATE_VISIBLE
+03-08 18:43:52.714 17271 17450 I VRB     : OpenXR XrEventDataSessionStateChanged: state XR_SESSION_STATE_VISIBLE->XR_SESSION_STATE_FOCUSED session=0x2 time=19014297891413
+03-08 18:43:52.714 17271 17450 I VRB     : XR_SESSION_STATE_FOCUSED
+03-08 18:43:56.706 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:57.707 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:58.707 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:43:59.707 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:44:00.718 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:44:01.718 17271 17450 D VRB     : Average Frame Rate: 90Hz
+03-08 18:44:02.729 17271 17450 D VRB     : Average Frame Rate: 90Hz

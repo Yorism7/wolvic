@@ -1442,6 +1442,14 @@ public class Windows implements TrayListener, TopBarWidget.Delegate, TitleBarWid
     }
 
     @Override
+    public void onMediaPlayStarted(@NonNull WindowWidget aWindow) {
+        // เข้า fullscreen + immersive VR ทันทีเมื่อกดเล่น (ไม่ต้องกด fullscreen แยก)
+        if (!aWindow.isFullScreen()) {
+            aWindow.setIsFullScreen(true);
+        }
+    }
+
+    @Override
     public void onContentFullScreen(@NonNull WindowWidget aWindow, boolean aFullScreen) {
         if (aFullScreen) {
             mFullscreenWindow = aWindow;
