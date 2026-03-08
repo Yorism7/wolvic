@@ -64,7 +64,7 @@ wolvic/third_party$ git submodule update --init --recursive
 
 You can build for different devices:
 
-- **`oculusvr`**: Oculus Quest
+- **`oculusvr`**: Oculus Quest (including Quest 3). See [scripts/QUEST3-BUILD.md](scripts/QUEST3-BUILD.md) for a step-by-step Quest 3 APK build (requires OVR Platform SDK).
 - **`hvr`**: Huawei VR Glasses
 - **`picoxr`**: Pico 4 and (untested) Pico Neo 3
 - **`lynx`**: Lynx R1

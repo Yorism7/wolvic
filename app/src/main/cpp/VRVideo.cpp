@@ -28,6 +28,9 @@
 
 namespace crow {
 
+const float kZoomMin = 0.5f;
+const float kZoomMax = 3.0f;
+
 struct VRVideo::State {
   vrb::CreationContextWeak context;
   std::weak_ptr<DeviceDelegate> deviceWeak;
@@ -41,10 +44,12 @@ struct VRVideo::State {
   bool mUseSameLayerForBothEyesBackup;
   float mWorldWidthBackup;
   float mWorlHeightBackup;
+  float mZoom;
   State()
     : mWorldWidthBackup(0)
     , mWorlHeightBackup(0)
     , mUseSameLayerForBothEyesBackup(true)
+    , mZoom(1.0f)
   {
   }
 
@@ -209,8 +214,12 @@ struct VRVideo::State {
     vrb::CreationContextPtr create = context.lock();
     DeviceDelegatePtr device = deviceWeak.lock();
     VRLayerEquirectPtr equirect = device->CreateLayerEquirect(window->GetLayer());
+    if (!equirect) {
+      layer = window->GetLayer();
+      leftEye = createSphereProjection(false, device::EyeRect(0.0f, 0.0f, 1.0f, 1.0f));
+      return;
+    }
     layer = equirect;
-
     leftEye = vrb::Toggle::Create(create);
     leftEye->AddNode(VRLayerNode::Create(create, equirect));
   }
@@ -219,8 +228,13 @@ struct VRVideo::State {
     vrb::CreationContextPtr create = context.lock();
     DeviceDelegatePtr device = deviceWeak.lock();
     VRLayerEquirectPtr equirect = device->CreateLayerEquirect(window->GetLayer());
+    if (!equirect) {
+      layer = window->GetLayer();
+      leftEye = createSphereProjection(false, device::EyeRect(0.0f, 0.5f, 1.0f, 0.5f));
+      rightEye = createSphereProjection(false, device::EyeRect(0.0f, 0.0f, 1.0f, 0.5f));
+      return;
+    }
     layer = equirect;
-
     vrb::Matrix leftTransform = vrb::Matrix::Identity();
     leftTransform.ScaleInPlace(vrb::Vector(1.0f, 0.5f, 1.0f));
     equirect->SetUVTransform(device::Eye::Left, leftTransform);
@@ -250,8 +264,12 @@ struct VRVideo::State {
     vrb::CreationContextPtr create = context.lock();
     DeviceDelegatePtr device = deviceWeak.lock();
     VRLayerEquirectPtr equirect = device->CreateLayerEquirect(window->GetLayer());
+    if (!equirect) {
+      layer = window->GetLayer();
+      leftEye = createSphereProjection(true, device::EyeRect(0.0f, 0.0f, 1.0f, 1.0f));
+      return;
+    }
     layer = equirect;
-
     vrb::Matrix uvTransform = vrb::Matrix::Identity();
     uvTransform.ScaleInPlace(vrb::Vector(2.0f, 1.0f, 1.0f));
 
@@ -266,8 +284,13 @@ struct VRVideo::State {
     vrb::CreationContextPtr create = context.lock();
     DeviceDelegatePtr device = deviceWeak.lock();
     VRLayerEquirectPtr equirect = device->CreateLayerEquirect(window->GetLayer());
+    if (!equirect) {
+      layer = window->GetLayer();
+      leftEye = createSphereProjection(true, device::EyeRect(0.0f, 0.0f, 0.5f, 1.0f));
+      rightEye = createSphereProjection(true, device::EyeRect(0.5f, 0.0f, 0.5f, 1.0f));
+      return;
+    }
     layer = equirect;
-
     equirect->SetTextureRect(device::Eye::Left, device::EyeRect(0.0f, 0.0f, 0.5f, 1.0f));
     equirect->SetTextureRect(device::Eye::Right, device::EyeRect(0.5f, 0.0f, 0.5f, 1.0f));
     auto UVtransform = vrb::Matrix::Identity().Scale(vrb::Vector(2.0f, 1.0f, 1.0f)).Translate(vrb::Vector(-0.5, 0.0, 0.0));
@@ -282,8 +305,13 @@ struct VRVideo::State {
     vrb::CreationContextPtr create = context.lock();
     DeviceDelegatePtr device = deviceWeak.lock();
     VRLayerEquirectPtr equirect = device->CreateLayerEquirect(window->GetLayer());
+    if (!equirect) {
+      layer = window->GetLayer();
+      leftEye = createSphereProjection(true, device::EyeRect(0.0f, 0.0f, 0.5f, 1.0f));
+      rightEye = createSphereProjection(true, device::EyeRect(0.5f, 0.0f, 0.5f, 1.0f));
+      return;
+    }
     layer = equirect;
-
     equirect->SetTextureRect(device::Eye::Left, device::EyeRect(0.0f, 0.0f, 0.5f, 1.0f));
     equirect->SetTextureRect(device::Eye::Right, device::EyeRect(0.5f, 0.0f, 0.5f, 1.0f));
     equirect->SetUVTransform(device::Eye::Right, vrb::Matrix::Position(vrb::Vector(0.5f, 0.0f, 0.0f)));
@@ -297,8 +325,13 @@ struct VRVideo::State {
     vrb::CreationContextPtr create = context.lock();
     DeviceDelegatePtr device = deviceWeak.lock();
     VRLayerEquirectPtr equirect = device->CreateLayerEquirect(window->GetLayer());
+    if (!equirect) {
+      layer = window->GetLayer();
+      leftEye = createSphereProjection(true, device::EyeRect(0.0f, 0.5f, 1.0f, 0.5f));
+      rightEye = createSphereProjection(true, device::EyeRect(0.0f, 0.0f, 1.0f, 0.5f));
+      return;
+    }
     layer = equirect;
-
     equirect->SetTextureRect(device::Eye::Right, device::EyeRect(0.0f, 0.5f, 1.0f, 0.5f));
     equirect->SetTextureRect(device::Eye::Left, device::EyeRect(0.0f, 0.0f, 1.0f, 0.5f));
 
@@ -389,7 +422,35 @@ VRVideo::Exit() {
 
 void
 VRVideo::SetReorientTransform(const vrb::Matrix& transform) {
-  m.root->SetTransform(transform);
+  vrb::Matrix scale = vrb::Matrix::Identity().Scale(vrb::Vector(m.mZoom, m.mZoom, m.mZoom));
+  m.root->SetTransform(transform.PostMultiply(scale));
+}
+
+void
+VRVideo::SetZoom(float aZoom) {
+  float z = aZoom;
+  if (z < kZoomMin) z = kZoomMin;
+  if (z > kZoomMax) z = kZoomMax;
+  m.mZoom = z;
+}
+
+float
+VRVideo::GetZoom() const {
+  return m.mZoom;
+}
+
+bool
+VRVideo::IsEquirectProjection() const {
+  switch (m.projection) {
+    case VRVideoProjection::VIDEO_PROJECTION_360:
+    case VRVideoProjection::VIDEO_PROJECTION_360_STEREO:
+    case VRVideoProjection::VIDEO_PROJECTION_180:
+    case VRVideoProjection::VIDEO_PROJECTION_180_STEREO_LEFT_RIGHT:
+    case VRVideoProjection::VIDEO_PROJECTION_180_STEREO_TOP_BOTTOM:
+      return true;
+    default:
+      return false;
+  }
 }
 
 VRVideoPtr

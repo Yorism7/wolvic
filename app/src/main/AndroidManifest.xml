@@ -14,9 +14,11 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
 
-    <!-- Requested by GeckoView but not needed in VR -->
-    <uses-permission android:name="android.permission.WAKE_LOCK" tools:node="remove"/>
+    <!-- Gecko ต้องใช้ WAKE_LOCK เมื่อ setWakeLockState (เช่น ตอนเล่น VR video) ถ้าลบจะ native crash -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" tools:node="remove"/>
+    <!-- Required for CrashReporterService when started as FGS (Android 14+). -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
 
     <permission android:name="${applicationId}.CRASH_RECEIVER_PERMISSION"
                 android:protectionLevel="signature"/>
@@ -64,7 +66,8 @@
             android:name="com.igalia.wolvic.crashreporting.CrashReporterService"
             android:exported="false"
             android:process=":crash"
-            android:permission="android.permission.BIND_JOB_SERVICE">
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:foregroundServiceType="dataSync">
         </service>
         <provider
             android:name="androidx.core.content.FileProvider"

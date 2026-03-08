@@ -1,0 +1,537 @@
+
+03-08 17:33:52.163  1711  3856 I ActivityManager: Force stopping com.igalia.wolvic appid=10226 user=0: from pid 27094
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{b3c91d3 mr.com.overlay.figmin.prod/10186} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{cf2d409 unity.SUPERHOT_Team.SUPERHOT_VR_QA/10153} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{7f5360e com.UNIVRS.Freedom/10169} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{6b4782f quest.eleven.forfunlabs/10178} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{acfae3c com.fyian.TheThrillOfTheFight/10159} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{bd2a51a mr.com.picselica.OceanRiftFullQuest/10152} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{31a684b com.manerai.taxiDriverVR/10209} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{1e3fb41 com.iillusions.bamgame/10162} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{e88bd72 com.Miragesoft.RealVrFishingQ/10195} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{21d95c3 com.firaxis.invernessdemo/10142} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{20c5e40 com.Astrea.Gundam/10156} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{97bd179 com.coatsink.mibmw/10173} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{213ebe mr.com.Interdime.SpatialTV/10165} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{439cb1f com.mydearest.madsurgeon/10189} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{1791e6c com.owlchemylabs.jobsimulator/10163} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{b5f0c35 com.thunderful.legobricktales/10187} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{32e88ca mr.com.VirtualGoLLC.Ghostify/10166} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{eb9fa3b com.MyronSoftware.Deisim/10175} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{40fb558 com.Whirligig.Whirligig/10222} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{e0136b1 com.Incuvo.GreenHellVR/10182} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{3146796 com.Thoughtfish.GoodAndEvil/10180} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{b43ff17 mr.com.tvb.cubism/10176} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{676cf04 com.HomeNetGames.PiratesVR/10184} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{4c18ced com.SloppyStudios.NewtonsPlayground/10183} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{ba76722 com.SPSoftwareProductions.UnlimitedSnooker/10208} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{dff75b3 com.SalmiGmbH.SweetSurrenderVRTests/10158} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{713d770 com.mandegames.NightClubSimulater/10150} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{fb70ae9 com.Eidenz.MyWaifu/10200} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{f78d36e com.owlchemylabs.vacationsimulator/10191} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{bf1ba0f com.BaldHamsterGames.AnimeSexyPlaytimePassthroughVR/10196} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.171  1711  3856 I AppsFilter: interaction: PackageSetting{336fa9c mr.com.TomFoerster.ZombiesMR/10171} -> PackageSetting{8322f6c com.igalia.wolvic/10226} BLOCKED
+03-08 17:33:52.260  1711  3261 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.INFO] flg=0x10010000 pkg=com.igalia.wolvic cmp=com.igalia.wolvic/.VRBrowserActivity (has extras)} with LAUNCH_SINGLE_INSTANCE from uid 10084 (BAL_ALLOW_ALLOWLISTED_COMPONENT) result code=0
+03-08 17:33:52.288  1711  1762 I VolumetricWindowManagerServiceImpl: Handling SWMS response: launch into NEW_VOLUMETRIC_WINDOW VolumetricWindowPlacementResponse { volumetricToken = VolumetricWindowToken { scope = 1, token = horizonos.view.VolumetricWindowToken$InternalVolumetricToken@b0af48e, persistableToken = 5189442a-c50c-4e90-a4ba-4667102fbb95 }, relativeSpaceToken = SpaceToken { binderToken = android.os.BinderProxy@8ad9636, persistableToken = 00000000-0000-0000-0000-000000000000 }, pose = Pose { orientation = Vector4f { x = 0.0, y = 0.0, z = 0.0, w = 1.0 }, position = Vector3f { x = 0.0, y = 0.0, z = 0.0 } }, bounds = Extent3f { width = 0.65531963, height = 0.35051984, depth = 0.0 }, surfaceSize = 4128x2208, densityDpi = 0, visible = true } for launch request [ActivityInfo{4e67c89 com.igalia.wolvic.VRBrowserActivity}]
+03-08 17:33:52.330  1711  1762 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.INFO] flg=0x10010100 pkg=com.igalia.wolvic cmp=com.igalia.wolvic/.VRBrowserActivity (has extras)} with LAUNCH_SINGLE_INSTANCE from uid 10084 (realCallingUid=1000) (BAL_ALLOW_ALLOWLISTED_COMPONENT) result code=0
+03-08 17:33:52.331  1711  1761 I VolumetricContentMonitor: Switching to immersive app. taskId: 3, ActivityInfo{f6b1efa com.igalia.wolvic.VRBrowserActivity}
+03-08 17:33:52.335  1711  1711 I InterstitialController: onImmersiveActivityAppearing: uid: 10226, pid: 0, state: 1, com.igalia.wolvic, on task: WCT{RemoteToken{b40f52b Task{ceb9107 #3 type=standard}}}, launchId: null
+03-08 17:33:52.335  1711  1711 I InterstitialController: onImmersiveActivityAppearing: uid: 10226, pid: 0, state: 1, com.igalia.wolvic, on task: WCT{RemoteToken{b40f52b Task{ceb9107 #3 type=standard}}}, launchId: null
+03-08 17:33:52.344  1711  1711 V WorldManagerService: VW Content Listener: com.igalia.wolvic -1
+03-08 17:33:52.345  1711  1711 D SpatialAudioService: Skipping processing for app: com.igalia.wolvic (isNewApp: false, epsService: true)
+03-08 17:33:52.349  1711  1774 I ActivityManager: Start proc 27119:com.igalia.wolvic/u0a226 for next-top-activity {com.igalia.wolvic/com.igalia.wolvic.VRBrowserActivity}
+03-08 17:33:52.401  1711  3885 D ActivityTaskManager: getDisplaysWithTopActivities: immersive ActivityRecord{f07168f u0 com.igalia.wolvic/.VRBrowserActivity t2309}
+03-08 17:33:52.404  1711  1711 I InterstitialController: onImmersiveActivityAppeared: uid: 10226, pid: 27119, state: 4, com.igalia.wolvic, on task: WCT{RemoteToken{b40f52b Task{ceb9107 #3 type=standard}}}, launchId: null
+03-08 17:33:52.404  1711  1711 I InterstitialController: onImmersiveActivityAppeared: uid: 10226, pid: 27119, state: 4, com.igalia.wolvic, on task: WCT{RemoteToken{b40f52b Task{ceb9107 #3 type=standard}}}, launchId: null
+03-08 17:33:52.405  1711  1761 I UiModeController: Switching from com.oculus.vrshell to com.igalia.wolvic
+03-08 17:33:52.406  1711  1711 V WorldManagerService: VW Content Listener: com.igalia.wolvic -1
+03-08 17:33:52.406  1711  1711 D SpatialAudioService: Skipping processing for app: com.igalia.wolvic (isNewApp: false, epsService: true)
+03-08 17:33:52.423  1711  3885 I HorizonOsWindowManagerUtils: setFocusedWindowSync: setting focus to ActivityRecord{f07168f u0 com.igalia.wolvic/.VRBrowserActivity t2309}
+03-08 17:33:54.420  1711  1774 I ActivityManager: Start proc 27236:com.igalia.wolvic:tab5/u0a226 for service {com.igalia.wolvic/org.mozilla.gecko.process.GeckoChildProcessServices$tab5}
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{85034f9 com.android.cts.priv.ctsshim/10028} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{be09c3e com.oculus.avatareditor/10127} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f6c6ca5 mr.com.Cyborn.WallTownWonder/10161} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4319a9f com.oculus.updater/10064} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{336fa9c mr.com.TomFoerster.ZombiesMR/10171} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c3577ec com.Polybay.CherryVXDemo/10198} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{bf1ba0f com.BaldHamsterGames.AnimeSexyPlaytimePassthroughVR/10196} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9d627b5 com.oculus.magicislandcastingservice/10087} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b463e4a com.oculus.captionservice/10063} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b1f41bb com.valvesoftware.steamlinkvr/10145} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3f826d8 com.uptodown/10170} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f8e8a31 com.meta.rl.trust.service/10086} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b1f516 com.facebook.horizon/10069} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9763e97 com.oculus.browser/10123} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e34d884 com.android.htmlviewer/10044} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d504ca2 com.oculus.cvp/10116} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9d62d33 com.oculus.systemintelligence/10179} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{a68f8f0 com.meta.curio.toybox/10160} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f78d36e com.owlchemylabs.vacationsimulator/10191} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{42b4e69 com.meta.shell.env.vista.focused/10001} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{fb70ae9 com.Eidenz.MyWaifu/10200} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{713d770 com.mandegames.NightClubSimulater/10150} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{68a90ee com.meta.curio.ruler/10135} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{dff75b3 com.SalmiGmbH.SweetSurrenderVRTests/10158} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{73c698f com.crytek.climb2/10167} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7cb41c com.oculus.accountscenter/10134} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ba76722 com.SPSoftwareProductions.UnlimitedSnooker/10208} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4c18ced com.SloppyStudios.NewtonsPlayground/10183} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{da16825 com.iDollDev.iDollQuest/10199} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{522e4f2 ru.vr4p.oculus4xvrplayerov/10155} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{676cf04 com.HomeNetGames.PiratesVR/10184} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{2b9f7db com.oculus.identitymanagement.service/10067} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{5200fab VirtualDesktop.Android/10148} BLOCKED
+03-08 17:33:54.811  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b43ff17 mr.com.tvb.cubism/10176} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{caef608 com.oculus.settings.rro/10002} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7a561a1 com.meta.AccountsCenter.pwa/10109} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3146796 com.Thoughtfish.GoodAndEvil/10180} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d4dfb87 com.meta.android.rro/10003} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e416ab4 com.oculus.integrity/10076} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b9576dd com.android.connectivity.resources/10018} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4c92252 com.commedia.player/10223} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e0136b1 com.Incuvo.GreenHellVR/10182} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f84c923 com.android.modulemetadata/10058} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{40fb558 com.Whirligig.Whirligig/10222} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{eb9fa3b com.MyronSoftware.Deisim/10175} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{77a3d9 com.Zhes.RickAndMortyVR/10139} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9b3119e com.BrittanyFactory.CodeSexOne/10193} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ed0d47f com.oculus.panelapp.kiosk/10053} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8e35c4c com.oculus.panelapp.settings/10105} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{32e88ca mr.com.VirtualGoLLC.Ghostify/10166} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ad4d998 com.oculus.systemutilities/10085} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b5f0c35 com.thunderful.legobricktales/10187} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ebaa9aa com.oculus.firsttimenux/10111} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8a8399b com.oculus.store/10118} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{a0ff138 com.meta.shell.env.vista.horror/10094} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1791e6c com.owlchemylabs.jobsimulator/10163} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{439cb1f com.mydearest.madsurgeon/10189} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{213ebe mr.com.Interdime.SpatialTV/10165} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1c6d477 com.oculus.horizonmediaplayer/10061} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{16ee8e4 com.meta.shell.env.vista.calming/10206} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{97bd179 com.coatsink.mibmw/10173} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b86d14d com.android.webview/10060} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{abac402 com.oculus.vrprivacycheckup/10133} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4ca4113 cn.vr4p.oculus4xvrplayerov/10219} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{20c5e40 com.Astrea.Gundam/10156} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1a3af50 com.meta.shell.env.vista.oceanarium/10120} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9fc3549 com.meta.shell.env.vista.central/10204} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{21d95c3 com.firaxis.invernessdemo/10142} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8151e4e com.oculus.panelapp.library/10097} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e8ddb6f horizon.platform.providers/10052} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e88bd72 com.Miragesoft.RealVrFishingQ/10195} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{21c707c com.oculus.systemresource/10112} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c49dd05 com.microsoft.rdc.androidx/10203} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3a8d15a com.google.android.apps.youtube.vr.oculus/10143} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{a53e27 com.heresphere.vrvideoplayer/10221} BLOCKED
+03-08 17:33:54.812  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{446bf8b com.oculus.guardiansetup/10081} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{fe1868 com.oculus.hzosgallery/10073} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{104481 horizon.platform.service/10051} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{892a926 horizonos.theme.quest.rro/10212} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f5fc967 com.oculus.os.qrcodereader/10103} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{45c8a9a com.android.wifi.resources/10004} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7d05314 com.dreamvrplayer.app/10225} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1e3fb41 com.iillusions.bamgame/10162} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{27ba7bd com.oculus.systemux/10077} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3077228 io.doublejack.maestro/10174} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{31a684b com.manerai.taxiDriverVR/10209} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4f031b2 com.meta.surfacetypingnux/10214} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b159503 com.dnnkeeper.refuge/10192} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{bd2a51a mr.com.picselica.OceanRiftFullQuest/10152} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ee98c80 com.oculus.oemconfig/10056} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d4002b9 com.oculus.remotedesktop/10114} BLOCKED
+03-08 17:33:54.813  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{92bb6fe com.meta.federatedcomputing.oculus/10070} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{fd27e5f com.oculus.q4bservice/10057} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b9af0ac com.oculus.guidebook/10110} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7551175 horizonos.supplement.metauniverse.libraryapk/10216} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{84aa17b com.oculus.mrds/10128} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{feba7c5 com.ocutech.spatialcamera/10188} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{5724ff1 com.RacketFury.RF_GearVR/10177} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{acfae3c com.fyian.TheThrillOfTheFight/10159} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{6b4782f quest.eleven.forfunlabs/10178} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b6da7d6 com.anagan.questapkinstaller/10190} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c57da57 com.oculus.tv/10082} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{64afa2d com.oculus.panelapp.devicepairing/10055} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1f46b62 com.oculus.userserver2/10065} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d95c4f3 com.meta.worlds/10054} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1b915b0 com.android.bookmarkprovider/10045} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{68a0c29 com.oculus.guardianresources/10119} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{931dbae com.oculus.guardian/10099} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7f5360e com.UNIVRS.Freedom/10169} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1bdbd4f com.oculus.explore/10115} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{791dcdc com.meta.hpiassets/10201} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d89b47 com.android.cts.ctsshim/10029} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{88e41e5 com.oculus.q4b.mdm/10059} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8c404ba com.meta.shell.env.footprint.haven2025/10205} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{6c2df6b com.fengu.titan/10185} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{be61761 com.oculus.permissioncontroller.rro/10000} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{cf2d409 unity.SUPERHOT_Team.SUPERHOT_VR_QA/10153} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{21db286 io.github.romanvht.byedpi/10154} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{cae0747 com.meta.environment.prod.nuxd/10124} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{43aeb74 com.oculus.helpcenter/10131} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8bc89d com.anagan.qgo/10151} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9127112 com.android.hotspot2.osulogin/10005} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{139d0e3 com.oculus.quickpromotionservice/10125} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{6c96743 xyz.skybox.player.ovr/10224} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{5d54ae0 com.bhg.shsft/10194} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1e15199 com.meta.HyperscapeHmdCapture/10202} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b3c91d3 mr.com.overlay.figmin.prod/10186} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9228c5e com.android.captiveportallogin/10046} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{92e983f org.ppsspp.ppssppvr/10157} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{af4350c com.PINKU.CamQuest/10197} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{56c6e55 com.oculus.panelapp.calendar/10215} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{387106a com.oculus.highwindservice/10104} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c6d040d com.BruteForceSoftware.haymaker/10210} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{37e795b com.meta.pclinkservice.server/10068} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d3595f8 com.meta.transport/10062} BLOCKED
+03-08 17:33:54.814  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9529ad1 com.oculus.configuration/10091} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{85034f9 com.android.cts.priv.ctsshim/10028} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{be09c3e com.oculus.avatareditor/10127} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f6c6ca5 mr.com.Cyborn.WallTownWonder/10161} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4319a9f com.oculus.updater/10064} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{336fa9c mr.com.TomFoerster.ZombiesMR/10171} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c3577ec com.Polybay.CherryVXDemo/10198} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{bf1ba0f com.BaldHamsterGames.AnimeSexyPlaytimePassthroughVR/10196} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9d627b5 com.oculus.magicislandcastingservice/10087} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b463e4a com.oculus.captionservice/10063} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b1f41bb com.valvesoftware.steamlinkvr/10145} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3f826d8 com.uptodown/10170} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f8e8a31 com.meta.rl.trust.service/10086} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b1f516 com.facebook.horizon/10069} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9763e97 com.oculus.browser/10123} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e34d884 com.android.htmlviewer/10044} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d504ca2 com.oculus.cvp/10116} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9d62d33 com.oculus.systemintelligence/10179} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{a68f8f0 com.meta.curio.toybox/10160} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f78d36e com.owlchemylabs.vacationsimulator/10191} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{42b4e69 com.meta.shell.env.vista.focused/10001} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{fb70ae9 com.Eidenz.MyWaifu/10200} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{713d770 com.mandegames.NightClubSimulater/10150} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{68a90ee com.meta.curio.ruler/10135} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{dff75b3 com.SalmiGmbH.SweetSurrenderVRTests/10158} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{73c698f com.crytek.climb2/10167} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7cb41c com.oculus.accountscenter/10134} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ba76722 com.SPSoftwareProductions.UnlimitedSnooker/10208} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4c18ced com.SloppyStudios.NewtonsPlayground/10183} BLOCKED
+03-08 17:33:54.821  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{da16825 com.iDollDev.iDollQuest/10199} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{522e4f2 ru.vr4p.oculus4xvrplayerov/10155} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{676cf04 com.HomeNetGames.PiratesVR/10184} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{2b9f7db com.oculus.identitymanagement.service/10067} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{5200fab VirtualDesktop.Android/10148} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b43ff17 mr.com.tvb.cubism/10176} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{caef608 com.oculus.settings.rro/10002} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7a561a1 com.meta.AccountsCenter.pwa/10109} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3146796 com.Thoughtfish.GoodAndEvil/10180} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d4dfb87 com.meta.android.rro/10003} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e416ab4 com.oculus.integrity/10076} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b9576dd com.android.connectivity.resources/10018} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4c92252 com.commedia.player/10223} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e0136b1 com.Incuvo.GreenHellVR/10182} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f84c923 com.android.modulemetadata/10058} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{40fb558 com.Whirligig.Whirligig/10222} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{eb9fa3b com.MyronSoftware.Deisim/10175} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{77a3d9 com.Zhes.RickAndMortyVR/10139} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9b3119e com.BrittanyFactory.CodeSexOne/10193} BLOCKED
+03-08 17:33:54.822  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ed0d47f com.oculus.panelapp.kiosk/10053} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8e35c4c com.oculus.panelapp.settings/10105} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{32e88ca mr.com.VirtualGoLLC.Ghostify/10166} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ad4d998 com.oculus.systemutilities/10085} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b5f0c35 com.thunderful.legobricktales/10187} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ebaa9aa com.oculus.firsttimenux/10111} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8a8399b com.oculus.store/10118} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{a0ff138 com.meta.shell.env.vista.horror/10094} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1791e6c com.owlchemylabs.jobsimulator/10163} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{439cb1f com.mydearest.madsurgeon/10189} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{213ebe mr.com.Interdime.SpatialTV/10165} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1c6d477 com.oculus.horizonmediaplayer/10061} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{16ee8e4 com.meta.shell.env.vista.calming/10206} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{97bd179 com.coatsink.mibmw/10173} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b86d14d com.android.webview/10060} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{abac402 com.oculus.vrprivacycheckup/10133} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4ca4113 cn.vr4p.oculus4xvrplayerov/10219} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{20c5e40 com.Astrea.Gundam/10156} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1a3af50 com.meta.shell.env.vista.oceanarium/10120} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9fc3549 com.meta.shell.env.vista.central/10204} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{21d95c3 com.firaxis.invernessdemo/10142} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8151e4e com.oculus.panelapp.library/10097} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e8ddb6f horizon.platform.providers/10052} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e88bd72 com.Miragesoft.RealVrFishingQ/10195} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{21c707c com.oculus.systemresource/10112} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c49dd05 com.microsoft.rdc.androidx/10203} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3a8d15a com.google.android.apps.youtube.vr.oculus/10143} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{a53e27 com.heresphere.vrvideoplayer/10221} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{446bf8b com.oculus.guardiansetup/10081} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{fe1868 com.oculus.hzosgallery/10073} BLOCKED
+03-08 17:33:54.823  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{104481 horizon.platform.service/10051} BLOCKED
+03-08 17:33:54.824  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{892a926 horizonos.theme.quest.rro/10212} BLOCKED
+03-08 17:33:54.824  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f5fc967 com.oculus.os.qrcodereader/10103} BLOCKED
+03-08 17:33:54.824  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{45c8a9a com.android.wifi.resources/10004} BLOCKED
+03-08 17:33:54.824  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7d05314 com.dreamvrplayer.app/10225} BLOCKED
+03-08 17:33:54.824  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1e3fb41 com.iillusions.bamgame/10162} BLOCKED
+03-08 17:33:54.824  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{27ba7bd com.oculus.systemux/10077} BLOCKED
+03-08 17:33:54.824  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3077228 io.doublejack.maestro/10174} BLOCKED
+03-08 17:33:54.824  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{31a684b com.manerai.taxiDriverVR/10209} BLOCKED
+03-08 17:33:54.824  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4f031b2 com.meta.surfacetypingnux/10214} BLOCKED
+03-08 17:33:54.825  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b159503 com.dnnkeeper.refuge/10192} BLOCKED
+03-08 17:33:54.825  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{bd2a51a mr.com.picselica.OceanRiftFullQuest/10152} BLOCKED
+03-08 17:33:54.825  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ee98c80 com.oculus.oemconfig/10056} BLOCKED
+03-08 17:33:54.825  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d4002b9 com.oculus.remotedesktop/10114} BLOCKED
+03-08 17:33:54.825  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{92bb6fe com.meta.federatedcomputing.oculus/10070} BLOCKED
+03-08 17:33:54.825  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{fd27e5f com.oculus.q4bservice/10057} BLOCKED
+03-08 17:33:54.825  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b9af0ac com.oculus.guidebook/10110} BLOCKED
+03-08 17:33:54.826  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7551175 horizonos.supplement.metauniverse.libraryapk/10216} BLOCKED
+03-08 17:33:54.826  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{84aa17b com.oculus.mrds/10128} BLOCKED
+03-08 17:33:54.826  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{feba7c5 com.ocutech.spatialcamera/10188} BLOCKED
+03-08 17:33:54.826  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{5724ff1 com.RacketFury.RF_GearVR/10177} BLOCKED
+03-08 17:33:54.826  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{acfae3c com.fyian.TheThrillOfTheFight/10159} BLOCKED
+03-08 17:33:54.826  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{6b4782f quest.eleven.forfunlabs/10178} BLOCKED
+03-08 17:33:54.826  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b6da7d6 com.anagan.questapkinstaller/10190} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c57da57 com.oculus.tv/10082} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{64afa2d com.oculus.panelapp.devicepairing/10055} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1f46b62 com.oculus.userserver2/10065} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d95c4f3 com.meta.worlds/10054} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1b915b0 com.android.bookmarkprovider/10045} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{68a0c29 com.oculus.guardianresources/10119} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{931dbae com.oculus.guardian/10099} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7f5360e com.UNIVRS.Freedom/10169} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1bdbd4f com.oculus.explore/10115} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{791dcdc com.meta.hpiassets/10201} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d89b47 com.android.cts.ctsshim/10029} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{88e41e5 com.oculus.q4b.mdm/10059} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8c404ba com.meta.shell.env.footprint.haven2025/10205} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{6c2df6b com.fengu.titan/10185} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{be61761 com.oculus.permissioncontroller.rro/10000} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{cf2d409 unity.SUPERHOT_Team.SUPERHOT_VR_QA/10153} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{21db286 io.github.romanvht.byedpi/10154} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{cae0747 com.meta.environment.prod.nuxd/10124} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{43aeb74 com.oculus.helpcenter/10131} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8bc89d com.anagan.qgo/10151} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9127112 com.android.hotspot2.osulogin/10005} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{139d0e3 com.oculus.quickpromotionservice/10125} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{6c96743 xyz.skybox.player.ovr/10224} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{5d54ae0 com.bhg.shsft/10194} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1e15199 com.meta.HyperscapeHmdCapture/10202} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b3c91d3 mr.com.overlay.figmin.prod/10186} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9228c5e com.android.captiveportallogin/10046} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{92e983f org.ppsspp.ppssppvr/10157} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{af4350c com.PINKU.CamQuest/10197} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{56c6e55 com.oculus.panelapp.calendar/10215} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{387106a com.oculus.highwindservice/10104} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c6d040d com.BruteForceSoftware.haymaker/10210} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{37e795b com.meta.pclinkservice.server/10068} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d3595f8 com.meta.transport/10062} BLOCKED
+03-08 17:33:54.829  1711  2424 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9529ad1 com.oculus.configuration/10091} BLOCKED
+03-08 17:33:55.068  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{85034f9 com.android.cts.priv.ctsshim/10028} BLOCKED
+03-08 17:33:55.068  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{be09c3e com.oculus.avatareditor/10127} BLOCKED
+03-08 17:33:55.068  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f6c6ca5 mr.com.Cyborn.WallTownWonder/10161} BLOCKED
+03-08 17:33:55.068  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4319a9f com.oculus.updater/10064} BLOCKED
+03-08 17:33:55.068  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{336fa9c mr.com.TomFoerster.ZombiesMR/10171} BLOCKED
+03-08 17:33:55.068  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c3577ec com.Polybay.CherryVXDemo/10198} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{bf1ba0f com.BaldHamsterGames.AnimeSexyPlaytimePassthroughVR/10196} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9d627b5 com.oculus.magicislandcastingservice/10087} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b463e4a com.oculus.captionservice/10063} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b1f41bb com.valvesoftware.steamlinkvr/10145} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3f826d8 com.uptodown/10170} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f8e8a31 com.meta.rl.trust.service/10086} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b1f516 com.facebook.horizon/10069} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9763e97 com.oculus.browser/10123} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e34d884 com.android.htmlviewer/10044} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d504ca2 com.oculus.cvp/10116} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9d62d33 com.oculus.systemintelligence/10179} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{a68f8f0 com.meta.curio.toybox/10160} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f78d36e com.owlchemylabs.vacationsimulator/10191} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{42b4e69 com.meta.shell.env.vista.focused/10001} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{fb70ae9 com.Eidenz.MyWaifu/10200} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{713d770 com.mandegames.NightClubSimulater/10150} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{68a90ee com.meta.curio.ruler/10135} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{dff75b3 com.SalmiGmbH.SweetSurrenderVRTests/10158} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{73c698f com.crytek.climb2/10167} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7cb41c com.oculus.accountscenter/10134} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ba76722 com.SPSoftwareProductions.UnlimitedSnooker/10208} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4c18ced com.SloppyStudios.NewtonsPlayground/10183} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{da16825 com.iDollDev.iDollQuest/10199} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{522e4f2 ru.vr4p.oculus4xvrplayerov/10155} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{676cf04 com.HomeNetGames.PiratesVR/10184} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{2b9f7db com.oculus.identitymanagement.service/10067} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{5200fab VirtualDesktop.Android/10148} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b43ff17 mr.com.tvb.cubism/10176} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{caef608 com.oculus.settings.rro/10002} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7a561a1 com.meta.AccountsCenter.pwa/10109} BLOCKED
+03-08 17:33:55.069  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3146796 com.Thoughtfish.GoodAndEvil/10180} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d4dfb87 com.meta.android.rro/10003} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e416ab4 com.oculus.integrity/10076} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b9576dd com.android.connectivity.resources/10018} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4c92252 com.commedia.player/10223} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e0136b1 com.Incuvo.GreenHellVR/10182} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f84c923 com.android.modulemetadata/10058} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{40fb558 com.Whirligig.Whirligig/10222} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{eb9fa3b com.MyronSoftware.Deisim/10175} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{77a3d9 com.Zhes.RickAndMortyVR/10139} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9b3119e com.BrittanyFactory.CodeSexOne/10193} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ed0d47f com.oculus.panelapp.kiosk/10053} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8e35c4c com.oculus.panelapp.settings/10105} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{32e88ca mr.com.VirtualGoLLC.Ghostify/10166} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ad4d998 com.oculus.systemutilities/10085} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b5f0c35 com.thunderful.legobricktales/10187} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ebaa9aa com.oculus.firsttimenux/10111} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8a8399b com.oculus.store/10118} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{a0ff138 com.meta.shell.env.vista.horror/10094} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1791e6c com.owlchemylabs.jobsimulator/10163} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{439cb1f com.mydearest.madsurgeon/10189} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{213ebe mr.com.Interdime.SpatialTV/10165} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1c6d477 com.oculus.horizonmediaplayer/10061} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{16ee8e4 com.meta.shell.env.vista.calming/10206} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{97bd179 com.coatsink.mibmw/10173} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b86d14d com.android.webview/10060} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{abac402 com.oculus.vrprivacycheckup/10133} BLOCKED
+03-08 17:33:55.070  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4ca4113 cn.vr4p.oculus4xvrplayerov/10219} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{20c5e40 com.Astrea.Gundam/10156} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1a3af50 com.meta.shell.env.vista.oceanarium/10120} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9fc3549 com.meta.shell.env.vista.central/10204} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{21d95c3 com.firaxis.invernessdemo/10142} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8151e4e com.oculus.panelapp.library/10097} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e8ddb6f horizon.platform.providers/10052} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{e88bd72 com.Miragesoft.RealVrFishingQ/10195} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{21c707c com.oculus.systemresource/10112} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c49dd05 com.microsoft.rdc.androidx/10203} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3a8d15a com.google.android.apps.youtube.vr.oculus/10143} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{a53e27 com.heresphere.vrvideoplayer/10221} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{446bf8b com.oculus.guardiansetup/10081} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{fe1868 com.oculus.hzosgallery/10073} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{104481 horizon.platform.service/10051} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{892a926 horizonos.theme.quest.rro/10212} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{f5fc967 com.oculus.os.qrcodereader/10103} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{45c8a9a com.android.wifi.resources/10004} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7d05314 com.dreamvrplayer.app/10225} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1e3fb41 com.iillusions.bamgame/10162} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{27ba7bd com.oculus.systemux/10077} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{3077228 io.doublejack.maestro/10174} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{31a684b com.manerai.taxiDriverVR/10209} BLOCKED
+03-08 17:33:55.071  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{4f031b2 com.meta.surfacetypingnux/10214} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b159503 com.dnnkeeper.refuge/10192} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{bd2a51a mr.com.picselica.OceanRiftFullQuest/10152} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{ee98c80 com.oculus.oemconfig/10056} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d4002b9 com.oculus.remotedesktop/10114} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{92bb6fe com.meta.federatedcomputing.oculus/10070} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{fd27e5f com.oculus.q4bservice/10057} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b9af0ac com.oculus.guidebook/10110} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7551175 horizonos.supplement.metauniverse.libraryapk/10216} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{84aa17b com.oculus.mrds/10128} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{feba7c5 com.ocutech.spatialcamera/10188} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{5724ff1 com.RacketFury.RF_GearVR/10177} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{acfae3c com.fyian.TheThrillOfTheFight/10159} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{6b4782f quest.eleven.forfunlabs/10178} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b6da7d6 com.anagan.questapkinstaller/10190} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c57da57 com.oculus.tv/10082} BLOCKED
+03-08 17:33:55.072  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{64afa2d com.oculus.panelapp.devicepairing/10055} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1f46b62 com.oculus.userserver2/10065} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d95c4f3 com.meta.worlds/10054} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1b915b0 com.android.bookmarkprovider/10045} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{68a0c29 com.oculus.guardianresources/10119} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{931dbae com.oculus.guardian/10099} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{7f5360e com.UNIVRS.Freedom/10169} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1bdbd4f com.oculus.explore/10115} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{791dcdc com.meta.hpiassets/10201} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d89b47 com.android.cts.ctsshim/10029} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{88e41e5 com.oculus.q4b.mdm/10059} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8c404ba com.meta.shell.env.footprint.haven2025/10205} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{6c2df6b com.fengu.titan/10185} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{be61761 com.oculus.permissioncontroller.rro/10000} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{cf2d409 unity.SUPERHOT_Team.SUPERHOT_VR_QA/10153} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{21db286 io.github.romanvht.byedpi/10154} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{cae0747 com.meta.environment.prod.nuxd/10124} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{43aeb74 com.oculus.helpcenter/10131} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{8bc89d com.anagan.qgo/10151} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9127112 com.android.hotspot2.osulogin/10005} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{139d0e3 com.oculus.quickpromotionservice/10125} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{6c96743 xyz.skybox.player.ovr/10224} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{5d54ae0 com.bhg.shsft/10194} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{1e15199 com.meta.HyperscapeHmdCapture/10202} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{b3c91d3 mr.com.overlay.figmin.prod/10186} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9228c5e com.android.captiveportallogin/10046} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{92e983f org.ppsspp.ppssppvr/10157} BLOCKED
+03-08 17:33:55.073  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{af4350c com.PINKU.CamQuest/10197} BLOCKED
+03-08 17:33:55.074  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{56c6e55 com.oculus.panelapp.calendar/10215} BLOCKED
+03-08 17:33:55.074  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{387106a com.oculus.highwindservice/10104} BLOCKED
+03-08 17:33:55.074  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{c6d040d com.BruteForceSoftware.haymaker/10210} BLOCKED
+03-08 17:33:55.074  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{37e795b com.meta.pclinkservice.server/10068} BLOCKED
+03-08 17:33:55.074  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{d3595f8 com.meta.transport/10062} BLOCKED
+03-08 17:33:55.074  1711  3261 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{9529ad1 com.oculus.configuration/10091} BLOCKED
+03-08 17:33:56.018  1711  1761 I UiModeController: Switching from com.igalia.wolvic to com.igalia.wolvic
+03-08 17:33:56.028  1711  3261 D CoreBackPreview: Window{34e1dae u0 com.igalia.wolvic/com.igalia.wolvic.VRBrowserActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@900ebe5, mPriority=0, mIsAnimationCallback=false}
+03-08 17:33:56.053  1711  1761 D VolumetricContentMonitor: Focused window changed to RunningWindowInfo{  pid: 27119, uid: 10226, userId: 0, windowContainerToken: 90334906, windowToken: android.view.IWindow$Stub$Proxy@40e996b, windowId: com.android.server.wm.WindowState$WindowId@b81cc8, displayId: 0, windowType: 1, activity: RunningActivityInfo { rootTask: 3, uid: 10226, pid: 27119, userId: 0, activity: com.igalia.wolvic.VRBrowserActivity, windowId: com.android.server.wm.WindowState$WindowId@b81cc8, state: ACTIVITY_STATE_VISIBLE}}, from android.view.IWindow$Stub$Proxy@76cff0d
+03-08 17:33:56.054  1711  1711 V WorldManagerService: VW Content Listener: com.igalia.wolvic -1
+03-08 17:33:56.054  1711  1711 D SpatialAudioService: Skipping processing for app: com.igalia.wolvic (isNewApp: false, epsService: true)
+03-08 17:33:56.054  1711  3885 D ActivityTaskManager: getDisplaysWithTopActivities: immersive ActivityRecord{f07168f u0 com.igalia.wolvic/.VRBrowserActivity t2309}
+03-08 17:33:56.128  1711  3885 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{931dbae com.oculus.guardian/10099} BLOCKED
+03-08 17:33:56.191  1711  3874 W ActivityManager: Receiver with filter android.content.IntentFilter@ffdeba4 already registered for pid 27119, callerPackage is com.igalia.wolvic
+03-08 17:33:56.206  1711  3261 I DisplayDeviceRepository: Display device added: DisplayDeviceInfo{"OffscreenViews Overlay": uniqueId="virtual:com.igalia.wolvic,10226,OffscreenViews Overlay,0", 16 x 16, modeId 293, renderFrameRate 60.0, defaultModeId 293, supportedModes [{id=293, width=16, height=16, fps=60.0, alternativeRefreshRates=[], supportedHdrTypes=[]}], colorMode 0, supportedColorModes [0], hdrCapabilities null, allmSupported false, gameContentTypeSupported false, density 200, 200.0 x 200.0 dpi, appVsyncOff 0, presDeadline 16666666, touch NONE, rotation 0, type VIRTUAL, deviceProductInfo null, state ON, committedState UNKNOWN, owner com.igalia.wolvic (uid 10226), frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 0.0, brightnessDefault 0.0, hdrSdrRatio NaN, FLAG_PRIVATE, FLAG_NEVER_BLANK, FLAG_OWN_CONTENT_ONLY, installOrientation 0, displayShape DisplayShape{ spec=-2062695029 displayWidth=16 displayHeight=16 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}}
+03-08 17:33:56.208  1711  3261 I LogicalDisplayMapper: Adding new display: 184: DisplayInfo{"OffscreenViews Overlay", displayId 184, displayGroupId 0, FLAG_PRIVATE, real 16 x 16, largest app 16 x 16, smallest app 16 x 16, appVsyncOff 0, presDeadline 16666666, mode 29360.0, defaultMode 293, modes [{id=293, width=16, height=16, fps=60.0, alternativeRefreshRates=[], supportedHdrTypes=[]}], hdrCapabilities null, userDisabledHdrTypes [], minimalPostProcessingSupported false, rotation 0, state ON, committedState UNKNOWN, type VIRTUAL, uniqueId "virtual:com.igalia.wolvic,10226,OffscreenViews Overlay,0", app 16 x 16, density 200 (200.0 x 200.0) dpi, layerStack 184, colorMode 0, supportedColorModes [0], deviceProductInfo null, owner com.igalia.wolvic (uid 10226), removeMode 1, refreshRateOverride 0.0, brightnessMinimum 0.0, brightnessMaximum 0.0, brightnessDefault 0.0, installOrientation ROTATION_0, layoutLimitedRefreshRate null, hdrSdrRatio not_available, thermalRefreshRateThrottling {}, thermalBrightnessThrottlingDataId default}
+03-08 17:33:56.212  1711  1765 I DisplayDevice: [184] Layerstack set to 184 for virtual:com.igalia.wolvic,10226,OffscreenViews Overlay,0
+03-08 17:33:56.318  1711  3261 D CoreBackPreview: Window{605becf u0 com.igalia.wolvic}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@ec4b8c7, mPriority=0, mIsAnimationCallback=false}
+03-08 17:33:56.432  1711  1761 V WindowManager: Sent Transition #476 createdAt=03-08 17:33:52.324 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=2309 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.INFO] flg=0x10010100 pkg=com.igalia.wolvic cmp=com.igalia.wolvic/.VRBrowserActivity } baseActivity=ComponentInfo{com.igalia.wolvic/com.igalia.wolvic.VRBrowserActivity} topActivity=ComponentInfo{com.igalia.wolvic/com.igalia.wolvic.VRBrowserActivity} origActivity=null realActivity=ComponentInfo{com.igalia.wolvic/com.igalia.wolvic.VRBrowserActivity} numActivities=1 numActivitiesPerUser={0=1} lastActiveTime=14813915 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=1 token=WCT{RemoteToken{979408d Task{7e5d1c #2309 type=standard A=10226:com.igalia.wolvic:-562413307}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{f6b1efa com.igalia.wolvic.VRBrowserActivity} launchCookies=[] telemetryLaunchIds=[] positionInParent=Point(0, 0) parentTaskId=3 isFocused=false isVisible=false isVisibleRequested=false isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+03-08 17:33:56.443  1711  1761 V WindowManager:     info={id=476 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{979408d Task{7e5d1c #2309 type=standard A=10226:com.igalia.wolvic:-562413307}}} m=OPEN f=NO_ANIMATION|MOVE_TO_TOP p=WCT{RemoteToken{b40f52b Task{ceb9107 #3 type=standard}}} leash=Surface(name=Task=2309)/@0x79e72db sb=Rect(0, 0 - 4128, 2208) eb=Rect(0, 0 - 4128, 2208) d=0},{WCT{RemoteToken{b40f52b Task{ceb9107 #3 type=standard}}} m=TO_FRONT f=TRANSLUCENT|NO_ANIMATION|MOVE_TO_TOP leash=Surface(name=Task=3)/@0x7907062 sb=Rect(0, 0 - 4128, 2208) eb=Rect(0, 0 - 4128, 2208) d=0},{WCT{RemoteToken{f89cdbe Task{36c7407 #2173 type=home A=10084:com.oculus.vrshell:1047810524}}} m=TO_BACK f=NONE p=WCT{RemoteToken{24553e8 Task{e3c9b21 #2 type=home}}} leash=Surface(name=Task=2173)/@0x841bb4b sb=Rect(0, 0 - 4128, 2208) eb=Rect(0, 0 - 4128, 2208) d=0},{WCT{RemoteToken{24553e8 Task{e3c9b21 #2 type=home}}} m=TO_BACK f=TRANSLUCENT leash=Surface(name=Task=2)/@0x26e07d7 sb=Rect(0, 0 - 4128, 2208) eb=Rect(0, 0 - 4128, 2208) d=0}]}
+03-08 17:34:02.844     0     0 I Minidump: Ignoring minidump region FRPC_2.
+03-08 17:34:03.557     0     0 I Minidump: Ignoring minidump region FRPC_1.
+03-08 17:34:05.278  1711  1774 I ActivityManager: Start proc 27691:com.igalia.wolvic:media/u0a226 for service {com.igalia.wolvic/org.mozilla.gecko.media.MediaManager}
+03-08 17:34:06.533  1711  3261 I ActivityManager: Background started FGS: Allowed [callingPackage: com.android.shell; callingUid: 10226; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { act=org.mozilla.gecko.ACTION_CRASHED cmp=com.igalia.wolvic/.crashreporting.CrashReporterService (has extras) }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:32; callerTargetSdkVersion:34; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+03-08 17:34:06.547  1711  1774 I ActivityManager: Start proc 27776:com.igalia.wolvic:crash/u0a226 for service {com.igalia.wolvic/com.igalia.wolvic.crashreporting.CrashReporterService}
+03-08 17:34:06.588  1711  3874 I WindowManager: WIN DEATH: Window{605becf u0 com.igalia.wolvic}
+03-08 17:34:06.589  1711  2424 I ActivityManager: Process com.igalia.wolvic (pid 27119) has died: fg  TOP 
+03-08 17:34:06.589  1711  2108 I VirtualDisplayAdapter: Virtual display device released because application token died: com.igalia.wolvic
+03-08 17:34:06.593  1711  1764 I DisplayDeviceRepository: Display device removed: DisplayDeviceInfo{"OffscreenViews Overlay": uniqueId="virtual:com.igalia.wolvic,10226,OffscreenViews Overlay,0", 16 x 16, modeId 293, renderFrameRate 60.0, defaultModeId 293, supportedModes [{id=293, width=16, height=16, fps=60.0, alternativeRefreshRates=[], supportedHdrTypes=[]}], colorMode 0, supportedColorModes [0], hdrCapabilities null, allmSupported false, gameContentTypeSupported false, density 200, 200.0 x 200.0 dpi, appVsyncOff 0, presDeadline 16666666, touch NONE, rotation 0, type VIRTUAL, deviceProductInfo null, state ON, committedState UNKNOWN, owner com.igalia.wolvic (uid 10226), frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 0.0, brightnessDefault 0.0, hdrSdrRatio NaN, FLAG_PRIVATE, FLAG_NEVER_BLANK, FLAG_OWN_CONTENT_ONLY, installOrientation 0, displayShape DisplayShape{ spec=-2062695029 displayWidth=16 displayHeight=16 physicalPixelDisplaySizeRatio=1.0 rotation=0 offsetX=0 offsetY=0 scale=1.0}}
+03-08 17:34:06.595  1711  3887 I WindowManager: WIN DEATH: Window{34e1dae u0 com.igalia.wolvic/com.igalia.wolvic.VRBrowserActivity}
+03-08 17:34:06.600  1711  2424 W ActivityTaskManager: Force removing ActivityRecord{f07168f u0 com.igalia.wolvic/.VRBrowserActivity t2309}: app died, no saved state
+03-08 17:34:06.620  1711  1761 I UiModeController: Switching from com.igalia.wolvic to com.oculus.vrshell
+03-08 17:34:06.639  1711  3887 I ActivityManager: Process com.igalia.wolvic:tab5 (pid 27236) has died: fg  SVC 
+03-08 17:34:06.655  1711  1761 V WindowManager: Sent Transition #479 createdAt=03-08 17:34:06.600 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=2309 displayId=0 isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.INFO] flg=0x10010100 pkg=com.igalia.wolvic cmp=com.igalia.wolvic/.VRBrowserActivity } baseActivity=ComponentInfo{com.igalia.wolvic/com.igalia.wolvic.VRBrowserActivity} topActivity=ComponentInfo{com.igalia.wolvic/com.igalia.wolvic.VRBrowserActivity} origActivity=null realActivity=ComponentInfo{com.igalia.wolvic/com.igalia.wolvic.VRBrowserActivity} numActivities=1 numActivitiesPerUser={0=1} lastActiveTime=14813982 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=1 token=WCT{RemoteToken{979408d Task{7e5d1c #2309 type=standard A=10226:com.igalia.wolvic:-562413307}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{f6b1efa com.igalia.wolvic.VRBrowserActivity} launchCookies=[] telemetryLaunchIds=[] positionInParent=Point(0, 0) parentTaskId=3 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+03-08 17:34:06.672  1711  2108 I ActivityManager: Process com.igalia.wolvic:media (pid 27691) has died: fg  SVC 
+03-08 17:34:07.842 27776 27776 D nativeloader: Configuring clns-6 for other apk /data/app/~~-oxIcgSGOBNclP8RnWmrpw==/com.igalia.wolvic-A_tJglG3MaPYBfGGOITDAw==/base.apk. target_sdk_version=32, uses_libraries=, library_path=/data/app/~~-oxIcgSGOBNclP8RnWmrpw==/com.igalia.wolvic-A_tJglG3MaPYBfGGOITDAw==/lib/arm64:/data/app/~~-oxIcgSGOBNclP8RnWmrpw==/com.igalia.wolvic-A_tJglG3MaPYBfGGOITDAw==/base.apk!/lib/arm64-v8a:/apex/com.meta.xr/priv-app/VrDriver/VrDriver.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.igalia.wolvic
+03-08 17:34:07.919 27776 27776 V GraphicsEnvironment: ANGLE GameManagerService for com.igalia.wolvic: false
+03-08 17:34:07.919 27776 27776 V GraphicsEnvironment: com.igalia.wolvic is not listed in per-application setting
+03-08 17:34:08.069 27776 27776 D VRB[CrashReporterService]: onStartCommand
+03-08 17:34:08.153 27776 27941 E VRB[CrashReporterService]: Application crashed during startup, before the engine's runtime had been created.
+03-08 17:34:09.338  2007  2477 I InterstitialRendererLoggerSession: 	 [last_top_activity_start: com.igalia.wolvic]
+03-08 17:34:12.029     0     0 I Minidump: Ignoring minidump region FRPC_2.
+03-08 17:34:24.309  2444  2444 D VrLockscreenHost: handleBioAuthEvent for 6 VrBioAuthLockscreen is not initialized
+03-08 17:34:24.513  2940  3018 D crash-reporter: SoftError: InterstitialEvent, calling function: logSessionBasedSoftError, package/process name: com.oculus.vrruntimeservice, description: Interstitial session (GUARDIAN) took more than 15.000000s for com.oculus.vrshell, pid: 2007
+03-08 17:34:24.513  2940  3018 D crash-reporter: Soft error name InterstitialEvent is not allowed to be collected or has exceeded rate limit
+03-08 17:34:24.513  2940  3018 I crash-reporter: Failed to collect uncaught drop box entry crash report
+03-08 17:34:25.550  1711  1796 I AppsFilter: interaction: PackageSetting{a481ffd com.igalia.wolvic/10226} -> PackageSetting{224f43b com.oculus.systemutilities/10085} BLOCKED
+03-08 17:34:27.848     0     0 I Minidump: Ignoring minidump region FRPC_1.
+03-08 17:34:36.626  1711  1773 W ActivityManager: Bringing down service while still waiting for start foreground: ServiceRecord{5cafab0 u0 com.igalia.wolvic/.crashreporting.CrashReporterService}
+--------- beginning of crash
+03-08 17:34:36.633 27776 27776 E AndroidRuntime: FATAL EXCEPTION: main
+03-08 17:34:36.633 27776 27776 E AndroidRuntime: Process: com.igalia.wolvic:crash, PID: 27776
+03-08 17:34:36.633 27776 27776 E AndroidRuntime: android.app.RemoteServiceException$ForegroundServiceDidNotStartInTimeException: Context.startForegroundService() did not then call Service.startForeground(): ServiceRecord{5cafab0 u0 com.igalia.wolvic/.crashreporting.CrashReporterService}
+03-08 17:34:36.639  3786  4084 I ForegroundAppHandler: Changing in focus immersive app from (com.igalia.wolvic) to ()
+03-08 17:34:36.640  1711 28074 I DropBoxManagerService: add tag=data_app_crash isTagEnabled=true flags=0x2
+03-08 17:34:36.643  1711  1762 W ActivityManager: Suppressing crash dialog for ProcessRecord{b738b4e 27776:com.igalia.wolvic:crash/u0a226} since immersive app is running.
+03-08 17:34:36.663 25450 25461 I orchestrator: orchestrator_common::policy_manager: Cancel policy task for ProcessInfo { pid: 27776, uid: 10226, moniker: "com.igalia.wolvic:crash", comm: "ia.wolvic:crash", oom_score_adj: -1000, cpu: "foreground" }
+03-08 17:34:36.664  1711  3896 I ActivityManager: Process com.igalia.wolvic:crash (pid 27776) has died: cch+5 CEM 
+03-08 17:34:36.701  2940  3018 D crash-reporter: Setting process name to com.igalia.wolvic:crash
+03-08 17:34:36.894  2940  3018 I crash-reporter: failed to retrieve nested bundle containing custom application state data atoms
+03-08 17:34:36.894  2940  3018 I crash-reporter: Failed to add custom application metadata entry for the process with id:27776 and name:com.igalia.wolvic:crash to the report.
+03-08 17:34:36.996  2940  3018 D crash-reporter: timestamp of the crash unavailable. default to current system time for the time of crash in the report.
+03-08 17:34:38.197  2940  3018 W crash-reporter: CompanionServer returned a valid userId
+03-08 17:34:38.627  2940  3018 D crash-reporter: CrashUtils::AddExtraCrashInfo: pid: 27776
+03-08 17:34:38.628  2940  3018 D crash-reporter: Positively confirmed no process with pid: 27776
+03-08 17:34:38.628  2940  3018 D crash-reporter: CrashUtils::AddExtraCrashInfo: isRunning: 0
+03-08 17:34:38.676  2940  3018 D crash-reporter: ACRA_CRASH_REPORT type entry crash report written at /data/misc/crashes/d6c0806d-9c80-438a-8ed8-33dc15252f26
+03-08 17:34:38.679  1103  1412 I DiagnosticsCollectorService: Crash detected: com.igalia.wolvic:crash (type: ACRA_CRASH_REPORT, reason: {pid="27776"}, pid: 27776)
+03-08 17:34:38.679  1103  1412 D DiagnosticsCollectorService: Crash added to history: com.igalia.wolvic:crash (type: ACRA_CRASH_REPORT, reason: {pid="27776"}). Total: 6
+03-08 17:34:38.679  2940  3018 D DiagnosticsCollectorService: Successfully notified crash to DiagnosticHooksService
+03-08 17:34:38.679  2940  3018 I crash-reporter: uncaught drop box entry crash report written at /data/misc/crashes/d6c0806d-9c80-438a-8ed8-33dc15252f26
+03-08 17:34:38.707  1121  1853 D crash-uploader: Report is not ready to be uploaded: 7983fd6f-7394-42fc-8acc-f23dfd7eeff9
+03-08 17:34:38.708  1121  1853 D crash-uploader: Report is not ready to be uploaded: 1dca14d6-9788-400a-a7ea-6f55274e1860
+03-08 17:34:40.581  1121  1853 I crash-uploader: Crash uploaded from /data/misc/crashes/d6c0806d-9c80-438a-8ed8-33dc15252f26 to https://b-www.facebook.com/mobile/reliability_event_log_upload/
+03-08 17:34:40.597  1121  1853 D crash-uploader: Report is not ready to be uploaded: 7983fd6f-7394-42fc-8acc-f23dfd7eeff9
+03-08 17:34:40.598  1121  1853 D crash-uploader: Report is not ready to be uploaded: 1dca14d6-9788-400a-a7ea-6f55274e1860
+03-08 17:34:40.604  1121  1853 D crash-uploader: Report is not ready to be uploaded: 7983fd6f-7394-42fc-8acc-f23dfd7eeff9
+03-08 17:34:40.605  1121  1853 D crash-uploader: Report is not ready to be uploaded: 1dca14d6-9788-400a-a7ea-6f55274e1860
+03-08 17:34:46.628  1711  1773 I ActivityManager: Skip zero pid ANR, process=com.igalia.wolvic:crash
+03-08 17:34:46.629  1215  1443 D parfait:service: Received TRACE_START reliability:service_foreground_anr:com.igalia.wolvic:crash request
+03-08 17:34:46.629  1215  1443 D parfait:tracing: Trigger scenario name: reliability:service_foreground_anr:com.igalia.wolvic:crash
+03-08 17:34:46.632  1215  1443 D parfait:config: Loaded ParfaitConfig: reliability:service_foreground_anr:com.igalia.wolvic:crash /data/oculus/parfait/config/perfetto_config.pb  46676
+03-08 17:34:46.632  1215  1443 W parfait:tracing: Not starting trace for scenario reliability:service_foreground_anr:com.igalia.wolvic:crash, it has reached per scenario limit of 1 per day
+03-08 17:34:46.632  1215  1443 D parfait:service: Received TRACE_STOP reliability:blackbox_anr:com.igalia.wolvic:crash request
+

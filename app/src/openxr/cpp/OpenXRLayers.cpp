@@ -210,6 +210,9 @@ OpenXRLayerEquirect::Update(XrSpace aSpace, const XrPosef &aReorientPose, XrSwap
   if (source) {
     swapchain = source->GetSwapChain();
   }
+  if (!swapchain) {
+    return;
+  }
   OpenXRLayerBase<VRLayerEquirectPtr, XrCompositionLayerEquirectKHR>::Update(aSpace, aReorientPose, aClearSwapChain);
 
   const uint numXRLayers = GetNumXRLayers();

@@ -1,6 +1,10 @@
 package com.igalia.wolvic.crashreporting;
 
 import android.app.ActivityManager;
+import android.app.Notification;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -33,6 +37,8 @@ public class CrashReporterService extends JobIntentService {
 
     private static final int PID_CHECK_INTERVAL = 100;
     private static final int JOB_ID = 1000;
+    private static final String NOTIFICATION_CHANNEL_ID = "wolvic_crash_reporter";
+    private static final int NOTIFICATION_ID = 9001;
     // Threshold used to fix Infinite restart loop on startup crashes.
     // See https://github.com/MozillaReality/FirefoxReality/issues/651
     public static final long MAX_RESTART_COUNT = 2;
@@ -41,11 +47,54 @@ public class CrashReporterService extends JobIntentService {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         Log.d(LOGTAG, "onStartCommand");
+        // Must call startForeground() immediately when started via startForegroundService(),
+        // otherwise Android throws ForegroundServiceDidNotStartInTimeException (e.g. on Quest).
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            ensureNotificationChannel();
+            Notification notification = buildForegroundNotification();
+            if (Build.VERSION.SDK_INT >= 34) {
+                startForeground(NOTIFICATION_ID, notification, android.content.pm.ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC);
+            } else {
+                startForeground(NOTIFICATION_ID, notification);
+            }
+        }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             enqueueWork(this, CrashReporterService.class, JOB_ID, intent);
         }
 
         return super.onStartCommand(intent, flags, startId);
+    }
+
+    private void ensureNotificationChannel() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel channel = new NotificationChannel(
+                    NOTIFICATION_CHANNEL_ID,
+                    getString(R.string.crash_reporter_channel_name),
+                    NotificationManager.IMPORTANCE_LOW);
+            channel.setShowBadge(false);
+            NotificationManager nm = getSystemService(NotificationManager.class);
+            if (nm != null) {
+                nm.createNotificationChannel(channel);
+            }
+        }
+    }
+
+    private Notification buildForegroundNotification() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            Intent activityIntent = new Intent(this, VRBrowserActivity.class);
+            activityIntent.setPackage(BuildConfig.APPLICATION_ID);
+            activityIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            PendingIntent pending = PendingIntent.getActivity(this, 0, activityIntent,
+                    PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
+            return new Notification.Builder(this, NOTIFICATION_CHANNEL_ID)
+                    .setContentTitle(getString(R.string.crash_reporter_notification_title))
+                    .setContentText(getString(R.string.crash_reporter_notification_text))
+                    .setSmallIcon(android.R.drawable.ic_dialog_info)
+                    .setContentIntent(pending)
+                    .setPriority(Notification.PRIORITY_LOW)
+                    .build();
+        }
+        return null;
     }
 
     @NonNull

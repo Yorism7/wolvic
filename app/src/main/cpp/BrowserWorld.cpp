@@ -657,6 +657,12 @@ BrowserWorld::State::UpdateControllers(bool& aRelayoutWidgets) {
     } else if (wasPressed != pressed) {
       VRBrowser::HandleMotionEvent(0, controller.index, jboolean(controller.focused), (jboolean) pressed, 0.0f, 0.0f);
     } else if (vrVideo != nullptr) {
+      if (vrVideo->IsEquirectProjection() && controller.enabled && controller.numAxes > device::kImmersiveAxisThumbstickY) {
+        const float thumbstickY = controller.immersiveAxes[device::kImmersiveAxisThumbstickY];
+        const float kZoomSpeedPerFrame = 0.015f;
+        float newZoom = vrVideo->GetZoom() + thumbstickY * kZoomSpeedPerFrame;
+        vrVideo->SetZoom(newZoom);
+      }
       HandleControllerScroll(controller, -1);
       const bool togglePressed = controller.buttonState & ControllerDelegate::BUTTON_X ||
                                  controller.buttonState & ControllerDelegate::BUTTON_A;
@@ -721,9 +727,13 @@ BrowserWorld::State::HandleControllerScroll(Controller& controller, int handle) 
       controller.scrollStart = context->GetTimestamp();
     }
     const double ctime = context->GetTimestamp();
+    float scrollY = ScaleScrollDelta(controller.scrollDeltaY, controller.scrollStart, ctime);
+    if (vrVideo != nullptr && vrVideo->IsEquirectProjection()) {
+      scrollY = 0.0f;
+    }
     VRBrowser::HandleScrollEvent(handle, controller.index,
                                  ScaleScrollDelta(controller.scrollDeltaX, controller.scrollStart, ctime),
-                                 ScaleScrollDelta(controller.scrollDeltaY, controller.scrollStart, ctime));
+                                 scrollY);
     controller.scrollDeltaX = 0.0f;
     controller.scrollDeltaY = 0.0f;
   } else {

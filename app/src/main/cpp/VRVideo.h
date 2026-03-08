@@ -46,6 +46,9 @@ public:
   vrb::NodePtr GetRoot() const;
   void Exit();
   void SetReorientTransform(const vrb::Matrix& transform);
+  void SetZoom(float aZoom);
+  float GetZoom() const;
+  bool IsEquirectProjection() const;
 protected:
   struct State;
   VRVideo(State& aState, vrb::CreationContextPtr& aContext);

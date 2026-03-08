@@ -99,6 +99,9 @@
          On/Off switch which toggles whether an application crash is reported without first
          prompting the user. -->
     <string name="settings_crash_reporting">Crash Reporting</string>
+    <string name="crash_reporter_channel_name">Crash Reporter</string>
+    <string name="crash_reporter_notification_title">Wolvic</string>
+    <string name="crash_reporter_notification_text">Processing crash report…</string>
 
     <!-- This string is displayed in the Settings dialog box and is used to label an
          On/Off switch which toggles whether browser-level Telemetry is reported back to Mozilla. -->

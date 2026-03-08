@@ -1503,6 +1503,21 @@ DeviceDelegateOpenXR::CreateLayerEquirect(const VRLayerPtr &aSource) {
       break;
     }
   }
+  if (!source && !m.uiLayers.empty()) {
+    VRB_LOG("CreateLayerEquirect: window layer not found in uiLayers (count=%zu), using first layer with swapchain as fallback", m.uiLayers.size());
+    for (const OpenXRLayerPtr& layer: m.uiLayers) {
+      if (layer->GetSwapChain()) {
+        source = layer;
+        break;
+      }
+    }
+  } else if (!source) {
+    VRB_LOG("CreateLayerEquirect: window layer not found in uiLayers (count=%zu)", m.uiLayers.size());
+  }
+  if (!source) {
+    VRB_LOG("CreateLayerEquirect: no valid source, returning nullptr (VR video will use geometry fallback)");
+    return nullptr;
+  }
   if (m.equirectLayer) {
     m.equirectLayer->Destroy();
   }
